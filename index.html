@@ -146,9 +146,14 @@
       
       <!-- Authority Badges -->
       <div class="flex flex-wrap items-center justify-center gap-3 mt-6 text-xs font-mono text-slate-400">
-        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">ORCID: <b>0009-0004-8070-1348</b></span>
-        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">DOI: <b>10.5281/zenodo.22160706</b></span>
-        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Annals IDs: <b>260829-Prodromov [1-6]</b></span>
+        <a id="cy-effective-orcid-url" href="https://orcid.org/0009-0004-8070-1348" target="_blank" rel="me noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-slate-900 hover:bg-slate-800 border border-emerald-500/40 text-emerald-400 hover:text-emerald-300 transition-all shadow-sm">
+          <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width: 1em; height: 1em;" alt="ORCID iD icon"/>
+          <span>ORCID: <b>0009-0004-8070-1348</b></span>
+        </a>
+        <a href="https://doi.org/10.5281/zenodo.22160706" target="_blank" class="px-2.5 py-1 rounded bg-slate-900 hover:bg-slate-800 border border-slate-800 text-amber-400 hover:text-amber-300 transition-all">
+          DOI: <b>10.5281/zenodo.22160706</b>
+        </a>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">Annals IDs: <b>260829-Prodromov [1-6]</b></span>
         <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-emerald-400">Entropy: <b>0.0000</b></span>
       </div>
     </div>
@@ -240,9 +245,21 @@
   </main>
 
   <!-- Footer -->
-  <footer class="glass-panel border-t border-slate-800/80 mt-16 py-8 px-6 text-center text-xs text-slate-500 font-mono">
+  <footer class="glass-panel border-t border-slate-800/80 mt-16 py-8 px-6 text-center text-xs text-slate-400 font-mono">
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-3">
+      <a id="cy-effective-orcid-url" href="https://orcid.org/0009-0004-8070-1348" target="_blank" rel="me noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-slate-900 hover:bg-slate-800 border border-emerald-500/40 text-emerald-400 hover:text-emerald-300 transition-all">
+        <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width: 1em; height: 1em;" alt="ORCID iD icon"/>
+        <span>ORCID: 0009-0004-8070-1348</span>
+      </a>
+      <a href="https://doi.org/10.5281/zenodo.22160706" target="_blank" class="hover:text-amber-400 transition-colors">
+        CERN Zenodo DOI: 10.5281/zenodo.22160706
+      </a>
+      <a href="https://github.com/papica777-eng/AETERNA-MILLENNIUM-SINGULARITY" target="_blank" class="hover:text-cyan-400 transition-colors">
+        GitHub Source Repository
+      </a>
+    </div>
     <p>© 2026 Dimitar Prodromov • AETERNA Technologies EOOD • Pomorie 8200, Bulgaria</p>
-    <p class="mt-1">All mathematical proofs registered under CERN Zenodo DOI: 10.5281/zenodo.22148893</p>
+    <p class="mt-1 text-slate-500 text-[11px]">All mathematical proofs archived under permanent CERN / Zenodo open access and under review in Annals of Mathematics (Princeton / IAS).</p>
   </footer>
 
   <!-- Scripts -->
