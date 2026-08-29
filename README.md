@@ -7,17 +7,9 @@
 **Princeton Annals Submissions:** `260829-Prodromov` to `260829-Prodromov-6` *(Status: Under Review in Annals of Mathematics)*  
 **Repository Web Portal:** [https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/](https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/)  
 
----
-
-```
-  █████╗ ███████╗████████╗███████╗██████╗ ███╗   ██╗ █████╗ 
- ██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗████╗  ██║██╔══██╗
- ███████║█████╗     ██║   █████╗  ██████╔╝██╔██╗ ██║███████║
- ██╔══██║██╔══╝     ██║   ██╔══╝  ██╔══██╗██║╚██╗██║██╔══██║
- ██║  ██║███████╗   ██║   ███████╗██║  ██║██║ ╚████║██║  ██║
- ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
-           — THE MILLENNIUM PRIZE RESOLUTION SUITE —
-```
+<p align="center">
+  <img src="assets/aeterna_master_banner.jpg" alt="AETERNA — The Soul of the Universe" width="100%" />
+</p>
 
 ---
 
