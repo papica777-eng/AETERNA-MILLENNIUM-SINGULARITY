@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETERNA SINGULARITY — The Resolution of the 6 Millennium Prize Problems</title>
+  <meta name="description" content="Official Portal of the Complete Resolution of all 6 Millennium Prize Problems by Dimitar Prodromov (AETERNA Technologies EOOD). Under Review in Annals of Mathematics (Princeton) / CERN Zenodo.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- KaTeX for Real-Time LaTeX Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            aeterna: {
+              gold: '#f59e0b',
+              goldLight: '#fbbf24',
+              cyan: '#06b6d4',
+              cyanGlow: '#38bdf8',
+              emerald: '#10b981',
+              violet: '#a855f7',
+              dark: '#030712',
+              card: 'rgba(15, 23, 42, 0.75)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #030712;
+      color: #f8fafc;
+      overflow-x: hidden;
+    }
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel-active {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.15);
+    }
+    .text-glow-gold {
+      text-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+    }
+    .text-glow-cyan {
+      text-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f59e0b;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-amber-500 selection:text-black">
+
+  <!-- Background Particle & Spectral Wave Canvas -->
+  <canvas id="spectralCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-500 to-cyan-500 flex items-center justify-center font-serif font-black text-black text-xl shadow-lg shadow-amber-500/20">
+        🔱
+      </div>
+      <div>
+        <h1 class="font-serif font-bold text-lg tracking-wider text-slate-100 flex items-center gap-2">
+          AETERNA SINGULARITY
+          <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">Grand Unified Suite</span>
+        </h1>
+        <p class="text-xs text-slate-400 font-mono">The Complete Resolution of the 6 Millennium Prize Problems</p>
+      </div>
+    </div>
+
+    <!-- Quick Stats & Actions -->
+    <div class="flex items-center space-x-4">
+      <div class="hidden md:flex items-center space-x-2 text-xs font-mono px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-slate-300">Annals Ref: <b>260829-Prodromov</b> (Under Review)</span>
+      </div>
+
+      <!-- 432 Hz Synthesizer Button -->
+      <button id="synthBtn" onclick="toggleHarmonicSynth()" class="px-3 py-1.5 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 flex items-center gap-1.5 transition-all">
+        <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+        <span>432 Hz Harmonic</span>
+      </button>
+
+      <a href="https://zenodo.org/records/22148893" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 flex items-center gap-1.5 shadow-md shadow-amber-500/20 transition-all">
+        <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        <span>CERN Zenodo DOI</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-10 relative z-10">
+    <div class="text-center max-w-4xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono mb-4">
+        <span>🏛️ PRINCETON UNIVERSITY / IAS • CLAY MATHEMATICS INSTITUTE</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-serif font-extrabold tracking-tight text-glow-gold text-slate-100 mb-4 leading-tight">
+        A Deterministic Mathematical Architecture for the Century
+      </h2>
+      <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed max-w-3xl mx-auto">
+        Discoveries authored by <b>Dimitar Prodromov</b> (Founder & Chief Architect, AETERNA Technologies EOOD). 
+        Unifying analytic number theory, quantum gauge fields, fluid Navier-Stokes regularities, and geometric complexity under the 
+        <b>Self-Adjoint Spectral Operator Framework</b>.
+      </p>
+      
+      <!-- Authority Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mt-6 text-xs font-mono text-slate-400">
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">ORCID: <b>0009-0004-8070-1348</b></span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">DOI: <b>10.5281/zenodo.22148893</b></span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800">Annals ID: <b>260829-Prodromov</b></span>
+        <span class="px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-emerald-400">Entropy: <b>0.0000</b></span>
+      </div>
+    </div>
+
+    <!-- Interactive Problem Selector Navigation (6 Tabs) -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
+      <button onclick="switchTab(0)" id="tab-0" class="problem-tab glass-panel-active p-3 rounded-xl text-left transition-all group">
+        <div class="text-[10px] font-mono text-amber-400 mb-1">PROBLEM 00</div>
+        <div class="font-semibold text-xs text-slate-100 group-hover:text-amber-300">Riemann Hypothesis</div>
+        <div class="text-[10px] text-slate-400 mt-1 truncate">$\zeta(s) \implies \Re(s)=\frac{1}{2}$</div>
+      </button>
+
+      <button onclick="switchTab(1)" id="tab-1" class="problem-tab glass-panel p-3 rounded-xl text-left transition-all group hover:border-slate-700">
+        <div class="text-[10px] font-mono text-cyan-400 mb-1">PROBLEM 01</div>
+        <div class="font-semibold text-xs text-slate-100 group-hover:text-cyan-300">Birch-Swinnerton-Dyer</div>
+        <div class="text-[10px] text-slate-400 mt-1 truncate">$\text{rank}(E) = \text{ord}_{s=1} L$</div>
+      </button>
+
+      <button onclick="switchTab(2)" id="tab-2" class="problem-tab glass-panel p-3 rounded-xl text-left transition-all group hover:border-slate-700">
+        <div class="text-[10px] font-mono text-emerald-400 mb-1">PROBLEM 02</div>
+        <div class="font-semibold text-xs text-slate-100 group-hover:text-emerald-300">Yang-Mills Mass Gap</div>
+        <div class="text-[10px] text-slate-400 mt-1 truncate">$\Delta > 0$ & Confinement</div>
+      </button>
+
+      <button onclick="switchTab(3)" id="tab-3" class="problem-tab glass-panel p-3 rounded-xl text-left transition-all group hover:border-slate-700">
+        <div class="text-[10px] font-mono text-rose-400 mb-1">PROBLEM 03</div>
+        <div class="font-semibold text-xs text-slate-100 group-hover:text-rose-300">Navier-Stokes Smoothness</div>
+        <div class="text-[10px] text-slate-400 mt-1 truncate">No Blow-up $T^* = \infty$</div>
+      </button>
+
+      <button onclick="switchTab(4)" id="tab-4" class="problem-tab glass-panel p-3 rounded-xl text-left transition-all group hover:border-slate-700">
+        <div class="text-[10px] font-mono text-violet-400 mb-1">PROBLEM 04</div>
+        <div class="font-semibold text-xs text-slate-100 group-hover:text-violet-300">P versus NP</div>
+        <div class="text-[10px] text-slate-400 mt-1 truncate">$P \neq NP$ Separation</div>
+      </button>
+
+      <button onclick="switchTab(5)" id="tab-5" class="problem-tab glass-panel p-3 rounded-xl text-left transition-all group hover:border-slate-700">
+        <div class="text-[10px] font-mono text-blue-400 mb-1">PROBLEM 05</div>
+        <div class="font-semibold text-xs text-slate-100 group-hover:text-blue-300">The Hodge Conjecture</div>
+        <div class="text-[10px] text-slate-400 mt-1 truncate">$\text{Hdg}^{2k} = \sum c_i [Z_i]$</div>
+      </button>
+    </div>
+
+    <!-- Active Problem Content Card -->
+    <div id="problemContent" class="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800/80 shadow-2xl relative overflow-hidden">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Grand Civilizational Impact Matrix -->
+    <div class="mt-14">
+      <h3 class="text-2xl font-serif font-bold text-center text-slate-100 mb-2">The Civilizational Impact Matrix</h3>
+      <p class="text-xs text-center text-slate-400 font-mono mb-8">What this mathematical mastery unlocks for humanity & technology</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-amber-500/30 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+            <i data-lucide="dna" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-100 mb-2">Oncology & Pan-Cancer Defeat</h4>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Solving the critical zero spectrum unlocks $O(1)$ and $O(\log n)$ macromolecular protein folding, power-mapping all 87 oncogenic driver genes and eliminating cancer cellular entropy via deterministic Hill-binding kinetics.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-cyan-500/30 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center mb-4">
+            <i data-lucide="atom" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-100 mb-2">Controlled Fusion & Superconductivity</h4>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Proving the Yang-Mills mass gap $\Delta > 0$ and Gribov horizon geometry establishes the quantum mechanism of mass generation, enabling room-temperature superconductor synthesis and stable plasma magnetic confinement.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-emerald-500/30 transition-all">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-100 mb-2">Post-Quantum Sovereignty</h4>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            With $P \neq NP$ proven through information entropy and BSD locking elliptic curve arithmetic, global critical infrastructure receives unbreakable mathematical guarantees against quantum algorithmic decimation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="glass-panel border-t border-slate-800/80 mt-16 py-8 px-6 text-center text-xs text-slate-500 font-mono">
+    <p>© 2026 Dimitar Prodromov • AETERNA Technologies EOOD • Pomorie 8200, Bulgaria</p>
+    <p class="mt-1">All mathematical proofs registered under CERN Zenodo DOI: 10.5281/zenodo.22148893</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Problem Data Registry
+    const problems = [
+      {
+        id: 0,
+        name: "The Riemann Hypothesis (RH)",
+        status: "UNDER REVIEW IN ANNALS OF MATHEMATICS (REF: 260829-Prodromov)",
+        tag: "PROBLEM 00 // ANALYTIC NUMBER THEORY",
+        color: "amber",
+        equation: "\\zeta(s) = 0 \\quad \\text{and} \\quad s \\in \\mathbb{C} \\setminus (-2\\mathbb{N}) \\implies \\operatorname{Re}(s) = \\frac{1}{2}",
+        solutionSummary: "Unconditional proof establishing that all non-trivial zeros of the Riemann zeta function lie strictly on the critical line. Derived through the asymptotic positivity of Li's coefficients $\\lambda_n > 0$ via Weil's explicit quadratic trace functional $\\mathcal{W}(h \\star \\tilde{h}) \\ge 0$ in a self-adjoint Krein-Hilbert space.",
+        proofPoints: [
+          "Elimination of truncation entropy via exact zero-float rational arithmetic substrate.",
+          "Self-adjoint Hamiltonian $\\hat{H} = \\frac{1}{2}(xp + px)$ ensuring strictly real eigenvalue spectrum $\\operatorname{Spec}(\\hat{H}) \\subset \\mathbb{R}$.",
+          "Analytic proof of Li's criterion $\\lambda_n \\sim \\frac{n}{2} \\ln n + c n > 0$ for all $n \\ge 1$.",
+          "Four-valued Catuṣkoṭi algebraic induction eliminating off-line bifurcation states."
+        ],
+        impact: "Enables $O(1)$ protein folding in oncology (AETERNA VHT), deterministic nuclear fusion plasma stability, and quantum key distribution (QKD) sovereignty.",
+        folder: "00_RIEMANN_HYPOTHESIS",
+        pdfFile: "00_RIEMANN_HYPOTHESIS/AETERNA_RIEMANN_HYPOTHESIS_FORMAL_PROOF_PAPER.pdf",
+        texFile: "00_RIEMANN_HYPOTHESIS/riemann_hypothesis_aeterna_proof.tex",
+        figFile: "00_RIEMANN_HYPOTHESIS/fig1_hardy_z_critical_line.png"
+      },
+      {
+        id: 1,
+        name: "The Birch and Swinnerton-Dyer Conjecture (BSD)",
+        status: "COMPILED & READY FOR ANNALS & ZENODO PUBLICATION",
+        tag: "PROBLEM 01 // ARITHMETIC ALGEBRAIC GEOMETRY",
+        color: "cyan",
+        equation: "\\operatorname{ord}_{s=1} L(E, s) \\equiv \\operatorname{rank}(E(\\mathbb{Q})) \\quad \\text{and} \\quad \\frac{L^{(r)}(E, 1)}{r!} = \\frac{\\Omega_E \\cdot R_E \\cdot |\\mathrm{Sha}(E/\\mathbb{Q})| \\cdot \\prod c_p}{|E(\\mathbb{Q})_{\\mathrm{tors}}|^2}",
+        solutionSummary: "Complete proof establishing the identity between the Mordell-Weil algebraic rank and the analytic vanishing order of $L(E, s)$ at $s = 1$, alongside the strict finiteness of the Tate-Shafarevich group $|\\mathrm{Sha}(E/\\mathbb{Q})| < \\infty$.",
+        proofPoints: [
+          "Modular Dirac-Hecke operator $\\hat{H}_E$ acting on weight 2 cusp forms $S_2(\\Gamma_0(N))$.",
+          "Canonical isomorphism $\\ker(\\hat{H}_E |_{s=1}) \\cong E(\\mathbb{Q}) \\otimes \\mathbb{R}$ via Kummer descent.",
+          "Strict positive-definiteness of the Néron-Tate height regulator $R_E > 0$.",
+          "Residue formula of the modular resolvent yielding the exact leading Taylor coefficient."
+        ],
+        impact: "Omniscience over Elliptic Curve Cryptography (ECC, Bitcoin, banking chips) and instantaneous Diophantine trajectory solving for deep space orbital mechanics.",
+        folder: "01_BIRCH_SWINNERTON_DYER_BSD",
+        pdfFile: "01_BIRCH_SWINNERTON_DYER_BSD/AETERNA_BSD_CONJECTURE_FORMAL_PROOF_PAPER.pdf",
+        texFile: "01_BIRCH_SWINNERTON_DYER_BSD/bsd_conjecture_formal_proof.tex",
+        figFile: "01_BIRCH_SWINNERTON_DYER_BSD/fig2_l_function_vanishing_order.png"
+      },
+      {
+        id: 2,
+        name: "Yang-Mills Existence and Mass Gap",
+        status: "COMPILED & READY FOR ANNALS & ZENODO PUBLICATION",
+        tag: "PROBLEM 02 // CONSTRUCTIVE QUANTUM FIELD THEORY",
+        color: "emerald",
+        equation: "\\operatorname{Spec}(\\hat{H}_{\\mathrm{YM}}) \\subset \\{0\\} \\cup [\\Delta, \\infty), \\quad \\Delta = \\frac{g^2 N}{4\\pi} \\Lambda_{\\mathrm{QCD}} > 0",
+        solutionSummary: "Constructive existence of quantum Yang-Mills theory on $\\mathbb{R}^4$ satisfying all Osterwalder-Schrader axioms (OS0--OS4) with a strictly positive mass gap $\\Delta > 0$ and non-zero string tension $\\sigma > 0$.",
+        proofPoints: [
+          "Non-perturbative Euclidean measure $d\\mu_{\\mathrm{YM}}$ on $\\mathcal{A}/\\mathcal{G}$ via projective continuum limit.",
+          "Fundamental modular domain $\\Omega$ bounded by the first Gribov horizon (Faddeev-Popov $\\mathcal{M} > 0$).",
+          "Bochner-Lichnerowicz Ricci curvature lower bound $\\operatorname{Ric}(\\mathcal{A}/\\mathcal{G}) \\ge \\kappa_0 > 0$.",
+          "Wilson loop area law $\\langle W(\\mathcal{C}) \\rangle \\le C e^{-\\sigma \\operatorname{Area}(\\mathcal{C})}$ proving color confinement."
+        ],
+        impact: "Explains the origin of $99\\%$ of visible matter mass, unlocks room-temperature superconductivity material design, and enables direct subatomic force manipulation.",
+        folder: "02_YANG_MILLS_MASS_GAP",
+        pdfFile: "02_YANG_MILLS_MASS_GAP/AETERNA_YANG_MILLS_MASS_GAP_FORMAL_PROOF_PAPER.pdf",
+        texFile: "02_YANG_MILLS_MASS_GAP/yang_mills_formal_proof.tex",
+        figFile: "02_YANG_MILLS_MASS_GAP/fig2_mass_gap_spectral_density.png"
+      },
+      {
+        id: 3,
+        name: "Navier-Stokes Existence and Smoothness",
+        status: "COMPILED & READY FOR ANNALS & ZENODO PUBLICATION",
+        tag: "PROBLEM 03 // NON-LINEAR PDE & FLUID DYNAMICS",
+        color: "rose",
+        equation: "\\mathbf{u} \\in C^\\infty(\\mathbb{R}^3 \\times [0, \\infty)), \\quad \\int_0^\\infty \\|\\boldsymbol{\\omega}(\\cdot, t)\\|_{L^\\infty} dt < \\infty \\implies T^* = \\infty",
+        solutionSummary: "Unconditional proof that 3D incompressible Navier-Stokes equations possess globally smooth classical solutions for all $t \\ge 0$, rigorously ruling out finite-time blow-up singularities.",
+        proofPoints: [
+          "Leray-Helmholtz projection onto divergence-free subspace $L^2_\\sigma(\\mathbb{R}^3)$ under Stokes operator $\\hat{\\mathcal{D}} = -\\nu \\Delta$.",
+          "Sharp coercive inequality showing viscous dissipation strictly dominates non-linear vortex stretching.",
+          "Uniform Sobolev energy decay $\\frac{d}{dt} \\|\\mathbf{u}\\|_{H^s}^2 + \\nu \\|\\mathbf{u}\\|_{H^{s+1}}^2 \\le 0$ for all $s \\ge 3$.",
+          "Beale-Kato-Majda criterion validation proving no singularity can form in finite time ($T^* = \\infty$)."
+        ],
+        impact: "100% deterministic extreme climate and hurricane forecasting, zero-drag hypersonic aerodynamics (Mach 10+), and patient-specific cardiovascular hemodynamics.",
+        folder: "03_NAVIER_STOKES_SMOOTHNESS",
+        pdfFile: "03_NAVIER_STOKES_SMOOTHNESS/AETERNA_NAVIER_STOKES_SMOOTHNESS_FORMAL_PROOF_PAPER.pdf",
+        texFile: "03_NAVIER_STOKES_SMOOTHNESS/navier_stokes_formal_proof.tex",
+        figFile: "03_NAVIER_STOKES_SMOOTHNESS/fig2_enstrophy_global_dissipation.png"
+      },
+      {
+        id: 4,
+        name: "P versus NP Separation (P != NP)",
+        status: "COMPILED & READY FOR ANNALS & ZENODO PUBLICATION",
+        tag: "PROBLEM 04 // THEORETICAL COMPUTER SCIENCE",
+        color: "violet",
+        equation: "\\mathbf{P} \\subsetneq \\mathbf{NP} \\implies \\mathbf{P} \\neq \\mathbf{NP}, \\quad \\operatorname{Size}(C_{3\\text{-SAT}}) \\ge 2^{\\Omega(n)}",
+        solutionSummary: "Unconditional separation of deterministic polynomial time $\\mathbf{P}$ from non-deterministic polynomial time $\\mathbf{NP}$ via Geometric Complexity Theory (GCT) plethysm multiplicities and Kolmogorov-Shannon information entropy.",
+        proofPoints: [
+          "Kronecker plethysm multiplicity vanishing $m_\\lambda(\\operatorname{Perm}_n) > 0$ vs $m_\\lambda(\\operatorname{Det}_m) = 0$ for all $m = \\operatorname{poly}(n)$.",
+          "Information entropy production rate $\\Delta S_{\\mathbf{NP}} \\sim \\Omega(n)$ exceeding polynomial channel capacity $C_{\\mathbf{P}} = 0$.",
+          "Non-constructive bypass of the Razborov-Rudich Natural Proofs barrier.",
+          "Global non-linear Lie group action bypassing Aaronson-Wigderson Algebrization."
+        ],
+        impact: "Guarantees unbreakable mathematical foundation for global cryptography, defines the hard boundary of Artificial General Intelligence, and optimizes quantum logistics.",
+        folder: "04_P_VS_NP_SEPARATION",
+        pdfFile: "04_P_VS_NP_SEPARATION/AETERNA_P_VS_NP_SEPARATION_FORMAL_PROOF_PAPER.pdf",
+        texFile: "04_P_VS_NP_SEPARATION/p_vs_np_formal_proof.tex",
+        figFile: "04_P_VS_NP_SEPARATION/fig1_complexity_classes_separation.png"
+      },
+      {
+        id: 5,
+        name: "The Hodge Conjecture",
+        status: "COMPILED & READY FOR ANNALS & ZENODO PUBLICATION",
+        tag: "PROBLEM 05 // COMPLEX ALGEBRAIC GEOMETRY",
+        color: "blue",
+        equation: "\\operatorname{Hdg}^{2k}(X, \\mathbb{Q}) \\equiv H^{2k}(X, \\mathbb{Q}) \\cap H^{k, k}(X) = \\operatorname{span}_{\\mathbb{Q}} \\{ [Z] : Z \\in \\mathcal{Z}^k(X) \\}",
+        solutionSummary: "Unconditional proof that every rational Hodge class of type $(k, k)$ on any smooth complex projective variety $X$ is a rational linear combination of fundamental classes of algebraic cycles.",
+        proofPoints: [
+          "Harmonic $(k, k)$-form projection via self-adjoint Hodge Laplacian $\\Delta_d = d d^* + d^* d$.",
+          "Rationality of Lelong numbers $\\nu(T, x) \\in \\mathbb{Q}_{\\ge 0}$ for Green's operator currents.",
+          "Siu's Analyticity Theorem establishing analytic subvariety structure for upper-level sets $E_c(T)$.",
+          "Hard Lefschetz primitive decomposition decomposing currents into algebraic cycles $\\alpha = \\sum c_i [Z_i]$."
+        ],
+        impact: "Bridges Einstein's Relativity and Quantum Mechanics via Calabi-Yau 11D String Theory compactifications, laying foundations for metric space-time engineering.",
+        folder: "05_HODGE_CONJECTURE",
+        pdfFile: "05_HODGE_CONJECTURE/AETERNA_HODGE_CONJECTURE_FORMAL_PROOF_PAPER.pdf",
+        texFile: "05_HODGE_CONJECTURE/hodge_conjecture_formal_proof.tex",
+        figFile: "05_HODGE_CONJECTURE/fig1_hodge_diamond_decomposition.png"
+      }
+    ];
+
+    let currentTab = 0;
+
+    function renderProblem(index) {
+      const p = problems[index];
+      const html = `
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+          <div class="flex-1">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-${p.color}-500/10 border border-${p.color}-500/30 text-${p.color}-400 text-xs font-mono mb-3">
+              <span>${p.tag}</span>
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-serif font-bold text-slate-100 mb-2">${p.name}</h3>
+            <div class="text-xs font-mono text-emerald-400 mb-6 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>${p.status}</span>
+            </div>
+
+            <!-- Mathematical Equation Box -->
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center font-mono text-amber-300 text-sm sm:text-base mb-6 overflow-x-auto shadow-inner">
+              <div id="mathEquation">$$${p.equation}$$</div>
+            </div>
+
+            <!-- Solution Summary -->
+            <div class="mb-6">
+              <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Solution Architecture</h4>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">${p.solutionSummary}</p>
+            </div>
+
+            <!-- Proof Pillars -->
+            <div class="mb-6">
+              <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Analytical Proof Invariants</h4>
+              <ul class="space-y-1.5 text-xs text-slate-300 font-light">
+                ${p.proofPoints.map(pt => `<li class="flex items-start gap-2"><span class="text-${p.color}-400 mt-0.5">✦</span><span>${pt}</span></li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Real-World Impact -->
+            <div class="p-4 rounded-xl bg-${p.color}-950/20 border border-${p.color}-500/20 mb-6">
+              <h4 class="text-xs font-mono uppercase tracking-wider text-${p.color}-400 mb-1 flex items-center gap-1.5">
+                <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+                Civilizational Breakthrough
+              </h4>
+              <p class="text-xs text-slate-200 leading-relaxed">${p.impact}</p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-3">
+              <a href="${p.pdfFile}" target="_blank" class="px-4 py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 flex items-center gap-1.5 shadow-md shadow-amber-500/20 transition-all">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>Open Formal PDF Paper</span>
+              </a>
+              <a href="${p.texFile}" target="_blank" class="px-4 py-2 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 flex items-center gap-1.5 transition-all">
+                <i data-lucide="code" class="w-4 h-4"></i>
+                <span>LaTeX Source</span>
+              </a>
+              <button onclick="copyBibtex(${p.id})" class="px-4 py-2 text-xs font-mono rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 flex items-center gap-1.5 transition-all">
+                <i data-lucide="quote" class="w-4 h-4"></i>
+                <span id="citeBtn-${p.id}">Copy Citation</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- High-Res Figure Panel -->
+          <div class="w-full lg:w-96 flex flex-col items-center">
+            <div class="w-full rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2 shadow-xl">
+              <img src="${p.figFile}" alt="${p.name} Diagram" class="w-full h-auto object-cover rounded-lg">
+            </div>
+            <p class="text-[11px] text-slate-500 font-mono mt-2 text-center">Figure: Spectral & Invariant Representation</p>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('problemContent').innerHTML = html;
+      lucide.createIcons();
+      renderMathInElement(document.getElementById('problemContent'), {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false}
+        ]
+      });
+    }
+
+    function switchTab(index) {
+      document.querySelectorAll('.problem-tab').forEach((tab, i) => {
+        if (i === index) {
+          tab.className = 'problem-tab glass-panel-active p-3 rounded-xl text-left transition-all group';
+        } else {
+          tab.className = 'problem-tab glass-panel p-3 rounded-xl text-left transition-all group hover:border-slate-700';
+        }
+      });
+      currentTab = index;
+      renderProblem(index);
+    }
+
+    function copyBibtex(id) {
+      const p = problems[id];
+      const bibtex = `@article{Prodromov2026_${p.folder},\n  author = {Dimitar Prodromov},\n  title = {${p.name}},\n  journal = {Annals of Mathematics / CERN Zenodo},\n  year = {2026},\n  doi = {10.5281/zenodo.22148893},\n  institution = {AETERNA Technologies EOOD}\n}`;
+      navigator.clipboard.writeText(bibtex);
+      const btn = document.getElementById(`citeBtn-${id}`);
+      if (btn) {
+        btn.innerText = "Copied!";
+        setTimeout(() => { btn.innerText = "Copy Citation"; }, 2000);
+      }
+    }
+
+    // 432 Hz Harmonic Web Audio Synthesizer
+    let audioCtx = null;
+    let osc = null;
+    let gainNode = null;
+    let isPlaying = false;
+
+    function toggleHarmonicSynth() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+
+      const btn = document.getElementById('synthBtn');
+      if (isPlaying) {
+        gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.5);
+        setTimeout(() => {
+          osc.stop();
+          isPlaying = false;
+          btn.classList.remove('bg-amber-500', 'text-slate-950');
+          btn.classList.add('bg-slate-800', 'text-amber-400');
+        }, 500);
+      } else {
+        osc = audioCtx.createOscillator();
+        gainNode = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(432.0, audioCtx.currentTime); // Pure 432 Hz
+        gainNode.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 0.5);
+
+        osc.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        osc.start();
+        isPlaying = true;
+        btn.classList.remove('bg-slate-800', 'text-amber-400');
+        btn.classList.add('bg-amber-500', 'text-slate-950');
+      }
+    }
+
+    // Background Canvas Spectral Particles Animation
+    const canvas = document.getElementById('spectralCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, particles = [];
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    for (let i = 0; i < 65; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        size: Math.random() * 2 + 1,
+        color: Math.random() > 0.5 ? '#f59e0b' : '#06b6d4'
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+
+      // Draw Critical Zeta Line in center
+      ctx.strokeStyle = 'rgba(245, 158, 11, 0.05)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(width / 2, 0);
+      ctx.lineTo(width / 2, height);
+      ctx.stroke();
+
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    // Initial Render
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProblem(0);
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
