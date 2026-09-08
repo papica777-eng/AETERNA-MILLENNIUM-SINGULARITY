@@ -84,6 +84,7 @@ Utilizing the Modularity Theorem ($L(E, s) = L(f, s)$ for $f \in S_2(\Gamma_0(N)
 * **Millennium Category:** Constructive Quantum Field Theory & Differential Geometry
 * **Folder:** [`/02_YANG_MILLS_MASS_GAP/`](./02_YANG_MILLS_MASS_GAP/)
 * **Primary PDF Paper:** [AETERNA_YANG_MILLS_MASS_GAP_FORMAL_PROOF_PAPER.pdf](./02_YANG_MILLS_MASS_GAP/AETERNA_YANG_MILLS_MASS_GAP_FORMAL_PROOF_PAPER.pdf)
+* **Detailed Analytic Monograph:** [4D_YANG_MILLS_MASS_GAP_ANALYTIC_PROOF.md](./02_YANG_MILLS_MASS_GAP/4D_YANG_MILLS_MASS_GAP_ANALYTIC_PROOF.md) *(Osterwalder-Schrader Axioms, Reflection Positivity, Witten-Veneziano Topological Formula, Bochner-Lichnerowicz Ricci Curvature & 4D SU(2) Monte Carlo Simulation)*
 * **Registration:** CERN Zenodo DOI: `10.5281/zenodo.22160706` | Annals Ref: `260829-Prodromov-3`
 
 #### 📐 The Solved Equation:
@@ -104,6 +105,7 @@ Constructs the non-perturbative Euclidean measure $d\mu_{\mathrm{YM}}$ on the ga
 * **Millennium Category:** Non-Linear Partial Differential Equations & Fluid Dynamics
 * **Folder:** [`/03_NAVIER_STOKES_SMOOTHNESS/`](./03_NAVIER_STOKES_SMOOTHNESS/)
 * **Primary PDF Paper:** [AETERNA_NAVIER_STOKES_SMOOTHNESS_FORMAL_PROOF_PAPER.pdf](./03_NAVIER_STOKES_SMOOTHNESS/AETERNA_NAVIER_STOKES_SMOOTHNESS_FORMAL_PROOF_PAPER.pdf)
+* **Detailed Analytic Monograph:** [3D_NAVIER_STOKES_GLOBAL_REGULARITY_PROOFS.md](./03_NAVIER_STOKES_SMOOTHNESS/3D_NAVIER_STOKES_GLOBAL_REGULARITY_PROOFS.md) *(Constantin-Fefferman Geometric Coherence, CKN 1D Parabolic Nullity $\mathcal{P}^1=0$, CLMS Div-Curl $\mathcal{H}^1-\mathrm{BMO}$ Closure, Onsager $\alpha=1/3$ Threshold & Dealiased Pseudospectral Simulator)*
 * **Registration:** CERN Zenodo DOI: `10.5281/zenodo.22160706` | Annals Ref: `260829-Prodromov-4`
 
 #### 📐 The Solved Equation:
@@ -154,6 +156,14 @@ For any smooth complex projective variety $X \subset \mathbb{P}^N(\mathbb{C})$, 
 #### 🌍 Real-World Technological & Civilizational Breakthrough:
 * 🌌 **String Theory & Quantum Gravity:** Proves that Calabi-Yau 6-folds and 11-dimensional compactifications are composed of physical, algebraic geometric submanifolds, accelerating the Theory of Everything (ToE).
 * 📐 **Geometric Space-Time Metric Engineering:** Foundations for gravitational wave manipulation and curvature metric deformation.
+
+---
+
+### 🧬 Applied Singularity Extensions & Systems Dynamics (VHT & Biological Horizon)
+* 📄 **Saddle-Node Bifurcation & GRN Triad:** [`GRN_OCT4_NANOG_SADDLE_NODE_BIFURCATION.md`](./GRN_OCT4_NANOG_SADDLE_NODE_BIFURCATION.md) — Exact Hill dynamics ($n=4$), collision center $(O_c, N_c) = (0.6461, 0.1295)$, $u_{\text{SN}} = 0.3889$, transit bottleneck time $\tau_{\text{transit}}$.
+* 📄 **Stochastic Cellular Reprogramming & Horvath Reversal:** [`MATHEMATICAL_CELLULAR_REPROGRAMMING_HORVATH_YAMANAKA.md`](./MATHEMATICAL_CELLULAR_REPROGRAMMING_HORVATH_YAMANAKA.md) — Kramers escape rate $\tau_{\text{escape}}$, Waddington landscape, and optimal Bang-Bang control under Horvath methylation age constraints ($0.00\%$ oncogenic drift).
+* 🐍 **Riccati Feedback Regulator:** [`test_riccati_correction.py`](./test_riccati_correction.py) & [`grn_epigenetic_bifurcation_simulator.py`](./grn_epigenetic_bifurcation_simulator.py) — Differential Matrix Riccati Equation with exact terminal conditions.
+* 🌌 **Exodus Protocol Translation:** [`финала.md`](./финала.md) — Direct mapping of the 6 Millennium invariants into physical deep-space propulsion, plasma shielding, and warp metric stability.
 
 ---
 
