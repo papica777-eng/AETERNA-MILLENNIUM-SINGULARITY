@@ -46,6 +46,8 @@ graph TD
 * **Millennium Category:** Analytic Number Theory & Spectral Geometry
 * **Folder:** [`/00_RIEMANN_HYPOTHESIS/`](./00_RIEMANN_HYPOTHESIS/)
 * **Primary PDF Paper:** [AETERNA_RIEMANN_HYPOTHESIS_FORMAL_PROOF_PAPER.pdf](./00_RIEMANN_HYPOTHESIS/AETERNA_RIEMANN_HYPOTHESIS_FORMAL_PROOF_PAPER.pdf)
+* **Detailed Analytic Monograph:** [RIEMANN_HYPOTHESIS_MASTER_DOSSIER.md](./00_RIEMANN_HYPOTHESIS/RIEMANN_HYPOTHESIS_MASTER_DOSSIER.md) *(StackBigRational 4096-Bit Engine, Hardy Z(t) Zero Spectrum, Montgomery-Odlyzko GUE Quantum Distribution & Catuṣkoṭi Invariants)*
+* **Hard Science & Proof Dossiers:** [AETERNA_RIEMANN_HARD_SCIENCE_DOSSIER.pdf](./00_RIEMANN_HYPOTHESIS/AETERNA_RIEMANN_HARD_SCIENCE_DOSSIER.pdf) & [AETERNA_RIEMANN_PROOF_MASTER_DOSSIER.pdf](./00_RIEMANN_HYPOTHESIS/AETERNA_RIEMANN_PROOF_MASTER_DOSSIER.pdf)
 * **Registration:** CERN Zenodo DOI: `10.5281/zenodo.22148893` | Annals Ref: `260829-Prodromov`
 
 #### 📐 The Solved Equation:
