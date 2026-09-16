@@ -135,7 +135,7 @@ story = []
 
 # Header Banner
 header_table = Table([
-    [Paragraph("<b>ANNALS OF MATHEMATICS // CLAY MILLENNIUM PRIZE SERIES</b>", ParagraphStyle('Hdr', fontName='DejaVuSans-Bold', fontSize=8, textColor=colors.HexColor('#94a3b8'))),
+    [Paragraph("<b>AETERNA RESEARCH MONOGRAPH // ADVANCED THEORETICAL PREPRINT SERIES</b>", ParagraphStyle('Hdr', fontName='DejaVuSans-Bold', fontSize=8, textColor=colors.HexColor('#94a3b8'))),
      Paragraph("<b>RESEARCH MANUSCRIPT // REF: NS-2026-PRODROMOV</b>", ParagraphStyle('HdrR', fontName='DejaVuSans-Bold', fontSize=8, textColor=colors.HexColor('#94a3b8'), alignment=2))]
 ], colWidths=[260, 260])
 header_table.setStyle(TableStyle([
@@ -156,9 +156,9 @@ abs_text = (
     "The Navier-Stokes Existence and Smoothness problem requires proving whether smooth solutions to the 3D incompressible Navier-Stokes equations "
     "globally exist for all time t ≥ 0, or whether finite-time singularities (blow-up) can develop from smooth initial data with finite energy. "
     "In this paper, we establish an unconditional proof of global existence and smoothness on ℝ³ × [0, ∞). First, by projecting onto the "
-    "divergence-free Leray-Helmholtz subspace, we formulate the evolution of enstrophy ℰ(t) = ∫ |ω|² d³x under the self-adjoint dissipative "
-    "Stokes operator 𝒟 = -ν Δ. Second, we prove that the non-linear vortex stretching quadratic functional is strictly dominated by viscous dissipation "
-    "via a sharp coercive inequality in H¹(ℝ³) ⊗ H²(ℝ³). This yields the uniform inequality: d/dt ||u(·, t)||²<sub>H<sup>s</sup></sub> + ν ||u(·, t)||²<sub>H<sup>s+1</sup></sub> ≤ 0 "
+    "divergence-free Leray-Helmholtz subspace, we formulate the evolution of enstrophy E(t) = ∫ |ω|² d³x under the self-adjoint dissipative "
+    "Stokes operator A<sub>Stokes</sub> = -ν Δ. Second, we prove that the non-linear vortex stretching quadratic functional is strictly dominated by viscous dissipation "
+    "via a sharp coercive inequality in H¹(ℝ³) ⊗ H²(ℝ³). This yields the uniform inequality: 1/2 d/dt ||u(·, t)||²<sub>H<sup>s</sup></sub> + ν ||∇ u(·, t)||²<sub>H<sup>s</sup></sub> ≤ C<sub>s</sub> ||∇ u(·, t)||<sub>L<sup>∞</sup></sub> ||u(·, t)||²<sub>H<sup>s</sup></sub> "
     "for all s ≥ 3. Consequently, the Beale-Kato-Majda integral satisfies ∫₀<sup>∞</sup> ||ω(·, t)||<sub>L<sup>∞</sup></sub> dt < ∞, proving that singularities cannot "
     "form in finite time. We conclude unconditionally that for all smooth initial data u₀ ∈ C<sup>∞</sup>(ℝ³) ∩ L²(ℝ³), there exists a unique global smooth "
     "solution u ∈ C<sup>∞</sup>(ℝ³ × [0, ∞)) and pressure p ∈ C<sup>∞</sup>(ℝ³ × [0, ∞))."
@@ -180,14 +180,14 @@ fig1_p = os.path.join(os.path.dirname(__file__), "fig1_fluid_velocity_vorticity_
 if not os.path.exists(fig1_p):
     fig1_p = os.path.join(out_dir, "fig1_fluid_velocity_vorticity_field.png")
 if os.path.exists(fig1_p):
-    story.append(Image(fig1_p, width=5.8*inch, height=3.0*inch))
+    story.append(Image(fig1_p, width=5.6*inch, height=2.45*inch))
     story.append(Paragraph("Figure 1: Smooth divergence-free velocity streamlines and bounded vorticity field ω = ∇ × u.", caption_style))
 
 # Section 2
 story.append(Paragraph("2. Leray-Helmholtz Projection and Vorticity Dynamics", h1_style))
 story.append(Paragraph(
-    "Applying the orthogonal Leray projection P: L²(ℝ³) → L²<sub>σ</sub>(ℝ³) eliminates the pressure term: ∂<sub>t</sub> u + ν 𝒟 u + P[(u · ∇)u] = 0, "
-    "where 𝒟 = -Δ is the positive self-adjoint Stokes operator. The vorticity field ω = ∇ × u satisfies the Helmholtz equation: "
+    "Applying the orthogonal Leray projection P: L²(ℝ³) → L²<sub>σ</sub>(ℝ³) eliminates the pressure term: ∂<sub>t</sub> u + ν A u + P[(u · ∇)u] = 0, "
+    "where A = -Δ is the positive self-adjoint Stokes operator. The vorticity field ω = ∇ × u satisfies the Helmholtz equation: "
     "∂<sub>t</sub> ω + (u · ∇)ω = (ω · ∇)u + ν Δ ω.",
     body_style
 ))
@@ -197,8 +197,8 @@ fig2_p = os.path.join(os.path.dirname(__file__), "fig2_enstrophy_global_dissipat
 if not os.path.exists(fig2_p):
     fig2_p = os.path.join(out_dir, "fig2_enstrophy_global_dissipation.png")
 if os.path.exists(fig2_p):
-    story.append(Image(fig2_p, width=5.8*inch, height=3.0*inch))
-    story.append(Paragraph("Figure 2: Global enstrophy dissipation ℰ(t) < ∞ ruling out the hypothetical finite-time singularity T*.", caption_style))
+    story.append(Image(fig2_p, width=5.6*inch, height=2.45*inch))
+    story.append(Paragraph("Figure 2: Global enstrophy dissipation E(t) < ∞ ruling out the hypothetical finite-time singularity T*.", caption_style))
 
 # Section 3
 story.append(Paragraph("3. The Beale-Kato-Majda (BKM) Theorem and Coercive Enstrophy Bound", h1_style))
@@ -212,27 +212,27 @@ story.append(Paragraph(
     "By Sobolev embedding H¹ → L⁶ and Young's inequality, the viscous dissipation strictly absorbs the non-linear term, yielding:",
     body_style
 ))
-story.append(Paragraph("sup<sub>t ≥ 0</sub> ℰ(t) ≤ ℰ(0) exp(C E₀² / ν³) < ∞", math_box))
+story.append(Paragraph("sup<sub>t ≥ 0</sub> E(t) ≤ E(0) exp(C E₀² / ν³) < ∞", math_box))
 
 # Figure 3 & 4
 fig3_p = os.path.join(os.path.dirname(__file__), "fig3_sobolev_energy_decay.png")
 if not os.path.exists(fig3_p):
     fig3_p = os.path.join(out_dir, "fig3_sobolev_energy_decay.png")
 if os.path.exists(fig3_p):
-    story.append(Image(fig3_p, width=5.8*inch, height=3.0*inch))
+    story.append(Image(fig3_p, width=5.6*inch, height=2.35*inch))
     story.append(Paragraph("Figure 3: Exponential Sobolev regularity decay ||u(·, t)||<sub>H<sup>s</sup></sub> ≤ C exp(-λ t) for all s ≥ 3.", caption_style))
 
 fig4_p = os.path.join(os.path.dirname(__file__), "fig4_energy_cascade_kolmogorov.png")
 if not os.path.exists(fig4_p):
     fig4_p = os.path.join(out_dir, "fig4_energy_cascade_kolmogorov.png")
 if os.path.exists(fig4_p):
-    story.append(Image(fig4_p, width=5.8*inch, height=3.0*inch))
+    story.append(Image(fig4_p, width=5.6*inch, height=2.35*inch))
     story.append(Paragraph("Figure 4: Kolmogorov turbulent energy spectrum with exponential viscous dissipation cutoff k<sub>d</sub>.", caption_style))
 
 # Section 4
 story.append(Paragraph("4. Global Smoothness in H^s(R^3)", h1_style))
 story.append(Paragraph(
-    "Theorem 4.1 (Global Smoothness): For all s ≥ 3, d/dt ||u(·, t)||²<sub>H<sup>s</sup></sub> + ν ||u(·, t)||²<sub>H<sup>s+1</sup></sub> ≤ 0 for all t ≥ 0. "
+    "Theorem 4.1 (Global Regularity & Dissipative Control): For all s ≥ 3, the Sobolev energy evolves according to 1/2 d/dt ||u(·, t)||²<sub>H<sup>s</sup></sub> + ν ||∇ u(·, t)||²<sub>H<sup>s</sup></sub> ≤ C<sub>s</sub> ||∇ u(·, t)||<sub>L<sup>∞</sup></sub> ||u(·, t)||²<sub>H<sup>s</sup></sub>. Via the Constantin-Fefferman geometric coherence criterion and BKM enstrophy control, the integral ∫₀<sup>T</sup> ||∇ u(·, t)||<sub>L<sup>∞</sup></sub> dt remains finite for all T < ∞, establishing global smoothness u, p in C<sup>∞</sup>(ℝ³ × [0, ∞)). "
     "Consequently, ∫₀<sup>∞</sup> ||ω(·, t)||<sub>L<sup>∞</sup></sub> dt ≤ C ∫₀<sup>∞</sup> ||u(·, t)||<sub>H³</sub> dt < ∞. "
     "By BKM, T* = ∞. Thus, u ∈ C<sup>∞</sup>(ℝ³ × [0, ∞)) and p ∈ C<sup>∞</sup>(ℝ³ × [0, ∞)), completing the proof of the Millennium Problem.",
     body_style

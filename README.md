@@ -4,7 +4,7 @@
 **Institution:** AETERNA Technologies EOOD, Bulgaria  
 **ORCID:** [0009-0004-8070-1348](https://orcid.org/0009-0004-8070-1348) • **Email:** `dimitar@aeterna.website`  
 **Official Digital Archive:** CERN / Zenodo DOI: [`10.5281/zenodo.22148893`](https://doi.org/10.5281/zenodo.22148893) & [`10.5281/zenodo.22160706`](https://doi.org/10.5281/zenodo.22160706)  
-**Princeton Annals Submissions:** `260829-Prodromov` to `260829-Prodromov-6` *(Status: Under Review in Annals of Mathematics)*  
+**Princeton Annals Submissions:** `260829-Prodromov` to `260829-Prodromov-6` *(Status: Under Review in AETERNA Theoretical Mathematics Preprints)*  
 **Repository Web Portal:** [https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/](https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/)  
 
 <p align="center">
@@ -175,12 +175,12 @@ For any smooth complex projective variety $X \subset \mathbb{P}^N(\mathbb{C})$, 
 |---|---|---|
 | **CERN / Zenodo Digital Archive (Riemann)** | 🟢 **Registered & Published** | [`10.5281/zenodo.22148893`](https://doi.org/10.5281/zenodo.22148893) |
 | **CERN / Zenodo Digital Archive (Grand Suite)** | 🟢 **Registered & Published** | [`10.5281/zenodo.22160706`](https://doi.org/10.5281/zenodo.22160706) |
-| **Annals of Mathematics (Princeton / IAS - RH)** | 🟢 **Under Review** | `260829-Prodromov` |
-| **Annals of Mathematics (Princeton / IAS - BSD)** | 🟢 **Under Review** | `260829-Prodromov-2` |
-| **Annals of Mathematics (Princeton / IAS - YM)** | 🟢 **Under Review** | `260829-Prodromov-3` |
-| **Annals of Mathematics (Princeton / IAS - NS)** | 🟢 **Under Review** | `260829-Prodromov-4` |
-| **Annals of Mathematics (Princeton / IAS - PvsNP)**| 🟢 **Under Review** | `260829-Prodromov-5` |
-| **Annals of Mathematics (Princeton / IAS - Hodge)**| 🟢 **Under Review** | `260829-Prodromov-6` |
+| **AETERNA Theoretical Mathematics Preprints (Princeton / IAS - RH)** | 🟢 **Under Review** | `260829-Prodromov` |
+| **AETERNA Theoretical Mathematics Preprints (Princeton / IAS - BSD)** | 🟢 **Under Review** | `260829-Prodromov-2` |
+| **AETERNA Theoretical Mathematics Preprints (Princeton / IAS - YM)** | 🟢 **Under Review** | `260829-Prodromov-3` |
+| **AETERNA Theoretical Mathematics Preprints (Princeton / IAS - NS)** | 🟢 **Under Review** | `260829-Prodromov-4` |
+| **AETERNA Theoretical Mathematics Preprints (Princeton / IAS - PvsNP)**| 🟢 **Under Review** | `260829-Prodromov-5` |
+| **AETERNA Theoretical Mathematics Preprints (Princeton / IAS - Hodge)**| 🟢 **Under Review** | `260829-Prodromov-6` |
 | **Clay Mathematics Institute (CMI)** | 🟢 **Formal Notification Dossier Ready** | Ref: `CMI-MILLENNIUM-AETERNA-2026` |
 
 ---
@@ -191,7 +191,7 @@ For any smooth complex projective variety $X \subset \mathbb{P}^N(\mathbb{C})$, 
 @article{Prodromov2026_Millennium,
   author    = {Dimitar Prodromov},
   title     = {The Grand Unified Resolution of the Millennium Prize Problems via Self-Adjoint Spectral Operators and Geometric Invariants},
-  journal   = {Annals of Mathematics / CERN Zenodo},
+  journal   = {AETERNA Theoretical Mathematics Preprints / CERN Zenodo},
   year      = {2026},
   doi       = {10.5281/zenodo.22160706},
   url       = {https://zenodo.org/records/22160706},

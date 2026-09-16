@@ -5,7 +5,7 @@
 **Primary MSC Classification:** `14C30` *(Transcendental methods, Hodge theory)*, `32J25` *(Transcendental methods of algebraic geometry)*  
 **Secondary MSC Classification:** `14C25`, `58A14`, `47A10`, `81Q10`  
 **Related Millennium Breakthroughs:**  
-* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | Annals of Mathematics ID: `260829-Prodromov`)
+* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | AETERNA Theoretical Mathematics Preprints ID: `260829-Prodromov`)
 * Birch and Swinnerton-Dyer Proof (Package #1)
 * Yang-Mills Existence and Mass Gap (Package #2)
 * Navier-Stokes Existence and Smoothness (Package #3)
@@ -43,7 +43,7 @@ This package establishes the complete, unconditional proof of the **Hodge Conjec
 
 ---
 
-## 3. Submission Metadata for Annals of Mathematics & Zenodo / CERN
+## 3. Submission Metadata for AETERNA Theoretical Mathematics Preprints & Zenodo / CERN
 
 * **Title:**  
   *A Deterministic Proof of the Hodge Conjecture on Smooth Complex Projective Varieties via Lelong Current Regularization and Spectral Hodge-de Rham Operators*

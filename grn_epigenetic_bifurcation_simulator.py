@@ -313,23 +313,23 @@ def run_benchmark_and_render_report():
     t = sim_res['time']
 
     # Subplot 1: Контролен сигнал u(t)
-    axes[0].plot(t, sim_res['u_signal'], 'crimson', lw=1.8, label='OSKM Контролен пулс u(t)')
-    axes[0].set_ylabel('OSKM Интензитет', fontsize=11, fontweight='bold')
+    axes[0].plot(t, sim_res['u_signal'], 'crimson', lw=1.8, label='OSKM Induction Control Pulse u(t)')
+    axes[0].set_ylabel('OSKM Pulse Intensity u(t)', fontsize=11, fontweight='bold')
     axes[0].grid(True, alpha=0.3)
     axes[0].legend(loc='upper right')
 
     # Subplot 2: Динамика на Oct4 и Nanog
-    axes[1].plot(t, sim_res['Oct4'], 'darkblue', lw=1.6, label='Oct4-Sox2 (Дедиференциация)')
-    axes[1].plot(t, sim_res['Nanog'], 'darkorange', lw=1.6, label='Nanog (Плурипотентен маркер)')
-    axes[1].axhline(0.923, color='black', linestyle='--', label='Седловидна бариера (Сепаратриса)')
-    axes[1].set_ylabel('Протеинна концентрация', fontsize=11, fontweight='bold')
+    axes[1].plot(t, sim_res['Oct4'], 'darkblue', lw=1.6, label='Oct4-Sox2 Expression')
+    axes[1].plot(t, sim_res['Nanog'], 'darkorange', lw=1.6, label='Nanog Pluripotency Marker')
+    axes[1].axhline(0.923, color='black', linestyle='--', label='Saddle Separatrix Barrier W^s(S)')
+    axes[1].set_ylabel('Protein Concentration', fontsize=11, fontweight='bold')
     axes[1].grid(True, alpha=0.3)
     axes[1].legend(loc='upper right')
 
     # Subplot 3: Часовник на Хорват
-    axes[2].plot(t, sim_res['DNAmAge'], 'forestgreen', lw=2.0, label='Horvath DNAmAge (години)')
-    axes[2].set_xlabel('Време (секунди / арбитражни единици)', fontsize=11, fontweight='bold')
-    axes[2].set_ylabel('Епигенетична Възраст', fontsize=11, fontweight='bold')
+    axes[2].plot(t, sim_res['DNAmAge'], 'forestgreen', lw=2.0, label='Horvath DNAmAge Clock (Years)')
+    axes[2].set_xlabel('Time t (Seconds / Normalized Arbitrary Units)', fontsize=11, fontweight='bold')
+    axes[2].set_ylabel('Horvath Epigenetic Age (Years)', fontsize=11, fontweight='bold')
     axes[2].grid(True, alpha=0.3)
     axes[2].legend(loc='upper right')
 

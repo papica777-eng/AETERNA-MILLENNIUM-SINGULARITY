@@ -77,7 +77,7 @@ First, we prove that the algebraic rank $r = \rank(E(\mathbb{Q}))$ of the Mordel
 
 Second, we prove the finiteness of the Tate-Shafarevich group $|\Sha(E/\mathbb{Q})| < \infty$ and establish the exact asymptotic formula for the leading Taylor coefficient:
 \[
-\frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod_{p | N} c_p}{|E(\mathbb{Q})_{\mathrm{tors}}|^2}
+\frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod_{p \mid N} c_p}{|E(\mathbb{Q})_{\mathrm{tors}}|^2}
 \]
 where $\Omega_E$ is the real volume period, $R_E > 0$ is the positive-definite N\'eron-Tate height regulator, $c_p = [E(\mathbb{Q}_p) : E_0(\mathbb{Q}_p)]$ are the local Tamagawa numbers, and $|E(\mathbb{Q})_{\mathrm{tors}}|$ is the torsion order. We conclude unconditionally that the Birch and Swinnerton-Dyer Conjecture is true for all elliptic curves over $\mathbb{Q}$.
 \end{abstract}
@@ -99,7 +99,7 @@ E(\mathbb{Q}) \cong \mathbb{Z}^r \oplus E(\mathbb{Q})_{\mathrm{tors}}.
 
 For each prime $p$, let $N_p = \#E(\mathbb{F}_p)$ denote the number of points on the reduced curve modulo $p$, and define the Frobenius trace $a_p = p + 1 - N_p$. The global Hasse-Weil $L$-function of $E/\mathbb{Q}$ is defined for $\Re(s) > 3/2$ as the Euler product:
 \begin{equation}
-L(E, s) = \prod_{p \nmid N} \left(1 - a_p p^{-s} + p^{1-2s}\right)^{-1} \prod_{p | N} \left(1 - a_p p^{-s}\right)^{-1} = \sum_{n=1}^\infty \frac{a_n}{n^s},
+L(E, s) = \prod_{p \nmid N} \left(1 - a_p p^{-s} + p^{1-2s}\right)^{-1} \prod_{p \mid N} \left(1 - a_p p^{-s}\right)^{-1} = \sum_{n=1}^\infty \frac{a_n}{n^s},
 \end{equation}
 where $N$ is the arithmetic conductor of $E$.
 
@@ -128,7 +128,7 @@ Let $E/\mathbb{Q}$ be an elliptic curve of conductor $N$. Then:
 \end{equation}
 \item \textbf{Exact Leading Coefficient Formula (Quantitative BSD):}
 \begin{equation}
-\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod_{p | N} c_p}{|E(\mathbb{Q})_{\mathrm{tors}}|^2},
+\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod_{p \mid N} c_p}{|E(\mathbb{Q})_{\mathrm{tors}}|^2},
 \end{equation}
 where $|\Sha(E/\mathbb{Q})|$ is the finite order of the Tate-Shafarevich group.
 \end{enumerate}
@@ -166,7 +166,7 @@ In particular, the spectrum is strictly real, establishing that all zeros of $L(
 \begin{definition}[The Generalized Weil Quadratic Form for Elliptic Curves]
 For any test function $h \in \mathcal{S}(\mathbb{R})$ belonging to the Schwartz class, let $\tilde{h}(x) = h(-x)$. The arithmetic Weil distribution functional for $E/\mathbb{Q}$ is defined as:
 \begin{equation}
-\mathcal{W}_E(h \star \tilde{h}) = 2 h(0) \ln\left(\frac{\sqrt{N}}{2\pi}\right) - \sum_{p | N} \sum_{m=1}^\infty \frac{c(p^m) \ln p}{p^m} h(m \ln p) + \sum_{\gamma_j(E)} |\hat{h}(\gamma_j(E))|^2.
+\mathcal{W}_E(h \star \tilde{h}) = 2 h(0) \ln\left(\frac{\sqrt{N}}{2\pi}\right) - \sum_{p \mid N} \sum_{m=1}^\infty \frac{c(p^m) \ln p}{p^m} h(m \ln p) + \sum_{\gamma_j(E)} |\hat{h}(\gamma_j(E))|^2.
 \end{equation}
 \end{definition}
 
@@ -223,11 +223,11 @@ is non-zero for any basis $\{P_1, \dots, P_r\}$ of the free Mordell-Weil group.
 \begin{theorem}[The Quantitative Formula and Finiteness of $\Sha$]
 By computing the residue of the modular resolvent operator $R(z, \hat{H}_E) = (\hat{H}_E - z)^{-1}$ around $z = 0$, the $r$-th derivative of $L(E, s)$ at $s = 1$ decomposes unconditionally into:
 \begin{equation}
-\frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod_{p | N} c_p}{|E(\mathbb{Q})_{\mathrm{tors}}|^2}.
+\frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod_{p \mid N} c_p}{|E(\mathbb{Q})_{\mathrm{tors}}|^2}.
 \end{equation}
 Since $L^{(r)}(E, 1) \neq 0$, $R_E > 0$, $\Omega_E > 0$, and $c_p \in \mathbb{Z}_{\ge 1}$, it follows directly that:
 \begin{equation}
-|\Sha(E/\mathbb{Q})| = \frac{L^{(r)}(E, 1) \cdot |E(\mathbb{Q})_{\mathrm{tors}}|^2}{r! \cdot \Omega_E \cdot R_E \cdot \prod_{p | N} c_p} \in \mathbb{Z}_{\ge 1} < \infty.
+|\Sha(E/\mathbb{Q})| = \frac{L^{(r)}(E, 1) \cdot |E(\mathbb{Q})_{\mathrm{tors}}|^2}{r! \cdot \Omega_E \cdot R_E \cdot \prod_{p \mid N} c_p} \in \mathbb{Z}_{\ge 1} < \infty.
 \end{equation}
 The Tate-Shafarevich group is finite, and its order is an exact integer square.
 \end{theorem}

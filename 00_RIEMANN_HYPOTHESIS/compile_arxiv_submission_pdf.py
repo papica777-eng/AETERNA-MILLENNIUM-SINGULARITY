@@ -177,7 +177,7 @@ def build_pdf(output_pdf_path):
     story = []
 
     # Title & Metadata
-    story.append(Paragraph("A Deterministic Spectral Proof of the Riemann Hypothesis via Weil Positivity, Li Criterion Asymptotics, and Catuṣkoṭi Algebraic Induction", title_style))
+    story.append(Paragraph("A Deterministic Spectral Proof of the Riemann Hypothesis via Weil Positivity, Li Criterion Asymptotics, and Catuskoti Algebraic Induction", title_style))
     story.append(Paragraph("<b>Dimitar Prodromov</b>", author_style))
     story.append(Paragraph("AETERNA Technologies EOOD, Pomorie 8200, Bulgaria • PIC: 865986222 • <code>dimitar@aeterna.website</code>", meta_style))
     story.append(Paragraph("<b>Primary MSC:</b> 11M06, 11M26 | <b>Secondary MSC:</b> 11N05, 81Q50, 68W30 | <b>Date:</b> August 2026", meta_style))
@@ -223,7 +223,7 @@ def build_pdf(output_pdf_path):
         "The exact Riemann-Siegel formula provides:",
         body_style
     ))
-    story.append(Paragraph("Z(t) = 2 ∑<sub>n=1..N</sub> [cos(θ(t) - t ln n) / √n] + R(t), &nbsp;&nbsp; N = ⌊√(t / 2π)⌋", eq_style))
+    story.append(Paragraph("Z(t) = 2 ∑<sub>n=1..N</sub> [cos(θ(t) - t ln n) / √n] + R(t), &nbsp;&nbsp; N = floor(√(t / 2*pi))", eq_style))
 
     fig1_path = os.path.join(os.path.dirname(output_pdf_path), "fig1_hardy_z_critical_line.png")
     if os.path.exists(fig1_path):
@@ -272,10 +272,10 @@ def build_pdf(output_pdf_path):
         story.append(Spacer(1, 4))
 
     # Section 6
-    story.append(Paragraph("6. Catuṣkoṭi Inductive Convergence and Main Proof", h1_style))
+    story.append(Paragraph("6. Catuskoti Inductive Convergence and Main Proof", h1_style))
     story.append(Paragraph(
         "By synthesizing exact 4096-bit rational stack arithmetic, Weil quadratic positivity, and Li's asymptotic bounds under the "
-        "four-valued Catuṣkoṭi non-classical state classification, any zero with β ≠ 1/2 creates a strict mathematical contradiction. "
+        "four-valued Catuskoti non-classical state classification, any zero with β ≠ 1/2 creates a strict mathematical contradiction. "
         "Hence, all non-trivial zeros lie strictly on Re(s) = 1/2.",
         body_style
     ))
@@ -287,9 +287,9 @@ def build_pdf(output_pdf_path):
         story.append(Spacer(1, 4))
 
     # Table of Zeros
-    story.append(Paragraph("Table 1: Catuṣkoṭi Hardware Verification on Ryzen 7000 SIMD Substrate", h2_style))
+    story.append(Paragraph("Table 1: Catuskoti Hardware Verification on Ryzen 7000 SIMD Substrate", h2_style))
     table_data = [
-        ["Zero Index", "Coordinate t", "Catuṣkoṭi State", "Analytic Error (Δ)", "Verdict"],
+        ["Zero Index", "Coordinate t", "Catuskoti State", "Analytic Error (Δ)", "Verdict"],
         ["Zero #1", "t = 14.134725", "TRUE_ZERO", "< 10^-12", "On Critical Line"],
         ["Zero #2", "t = 21.022040", "TRUE_ZERO", "< 10^-12", "On Critical Line"],
         ["Zero #3", "t = 25.010858", "TRUE_ZERO", "< 10^-12", "On Critical Line"],

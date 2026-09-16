@@ -5,9 +5,9 @@
 **Primary MSC Classification:** `35Q30` *(Navier-Stokes equations)*, `76D05` *(Incompressible Navier-Stokes equations)*  
 **Secondary MSC Classification:** `35B65`, `47F05`, `76F02`, `81Q10`  
 **Related Millennium Breakthroughs:**  
-* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | Annals of Mathematics ID: `260829-Prodromov`)
-* Birch and Swinnerton-Dyer Proof (Zenodo / Annals of Mathematics Package #1)
-* Yang-Mills Existence and Mass Gap (Zenodo / Annals of Mathematics Package #2)
+* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | AETERNA Theoretical Mathematics Preprints ID: `260829-Prodromov`)
+* Birch and Swinnerton-Dyer Proof (Zenodo / AETERNA Theoretical Mathematics Preprints Package #1)
+* Yang-Mills Existence and Mass Gap (Zenodo / AETERNA Theoretical Mathematics Preprints Package #2)
 
 ---
 
@@ -41,7 +41,7 @@ This package establishes the complete, unconditional proof of **Global Existence
 
 ---
 
-## 3. Submission Metadata for Annals of Mathematics & Zenodo / CERN
+## 3. Submission Metadata for AETERNA Theoretical Mathematics Preprints & Zenodo / CERN
 
 * **Title:**  
   *A Deterministic Proof of Global Existence and Smoothness for the Three-Dimensional Incompressible Navier-Stokes Equations*

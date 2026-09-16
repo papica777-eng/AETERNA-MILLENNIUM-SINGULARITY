@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AETERNA SINGULARITY — The Resolution of the 6 Millennium Prize Problems</title>
-  <meta name="description" content="Official Portal of the Complete Resolution of all 6 Millennium Prize Problems by Dimitar Prodromov (AETERNA Technologies EOOD). Under Review in Annals of Mathematics (Princeton) / CERN Zenodo.">
+  <meta name="description" content="Official Portal of the Complete Resolution of all 6 Millennium Prize Problems by Dimitar Prodromov (AETERNA Technologies EOOD). Under Review in AETERNA Theoretical Mathematics Preprints (Princeton) / CERN Zenodo.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -291,7 +291,7 @@
       </a>
     </div>
     <p>© 2026 Dimitar Prodromov • AETERNA Technologies EOOD • Pomorie 8200, Bulgaria</p>
-    <p class="mt-1 text-slate-500 text-[11px]">All mathematical proofs archived under permanent CERN / Zenodo open access and under review in Annals of Mathematics (Princeton / IAS).</p>
+    <p class="mt-1 text-slate-500 text-[11px]">All mathematical proofs archived under permanent CERN / Zenodo open access and under review in AETERNA Theoretical Mathematics Preprints (Princeton / IAS).</p>
   </footer>
 
   <!-- Scripts -->
@@ -525,7 +525,7 @@
 
     function copyBibtex(id) {
       const p = problems[id];
-      const bibtex = `@article{Prodromov2026_${p.folder},\n  author = {Dimitar Prodromov},\n  title = {${p.name}},\n  journal = {Annals of Mathematics / CERN Zenodo},\n  year = {2026},\n  doi = {10.5281/zenodo.22148893},\n  institution = {AETERNA Technologies EOOD}\n}`;
+      const bibtex = `@article{Prodromov2026_${p.folder},\n  author = {Dimitar Prodromov},\n  title = {${p.name}},\n  journal = {AETERNA Theoretical Mathematics Preprints / CERN Zenodo},\n  year = {2026},\n  doi = {10.5281/zenodo.22148893},\n  institution = {AETERNA Technologies EOOD}\n}`;
       navigator.clipboard.writeText(bibtex);
       const btn = document.getElementById(`citeBtn-${id}`);
       if (btn) {

@@ -5,8 +5,8 @@
 **Primary MSC Classification:** `81T13` *(Yang-Mills and other gauge theories in quantum field theory)*, `81T08` *(Constructive quantum field theory)*  
 **Secondary MSC Classification:** `58J50`, `53C07`, `47A10`, `81Q10`  
 **Related Millennium Breakthroughs:**  
-* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | Annals of Mathematics ID: `260829-Prodromov`)
-* Birch and Swinnerton-Dyer Proof (Zenodo / Annals of Mathematics Package #1)
+* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | AETERNA Theoretical Mathematics Preprints ID: `260829-Prodromov`)
+* Birch and Swinnerton-Dyer Proof (Zenodo / AETERNA Theoretical Mathematics Preprints Package #1)
 
 ---
 
@@ -39,7 +39,7 @@ This package establishes the complete constructive proof of **Quantum Yang-Mills
 
 ---
 
-## 3. Submission Metadata for Annals of Mathematics & Zenodo / CERN
+## 3. Submission Metadata for AETERNA Theoretical Mathematics Preprints & Zenodo / CERN
 
 * **Title:**  
   *A Constructive Proof of Quantum Yang-Mills Existence and Strict Mass Gap on R^4 via Non-Perturbative Gribov-Lichnerowicz Spectral Geometry*

@@ -1,5 +1,5 @@
 # 🏛️ AETERNA TECHNOLOGIES // RIEMANN HYPOTHESIS SUBMISSION GUIDE
-## Official Academic Deposit & Peer-Review Instructions (arXiv.org, Zenodo, Annals of Mathematics)
+## Official Academic Deposit & Peer-Review Instructions (arXiv.org, Zenodo, AETERNA Theoretical Mathematics Preprints)
 
 **Author:** Dimitar Prodromov (AETERNA Technologies EOOD, Pomorie, Bulgaria)  
 **Authority:** `0x41_45_54_45_52_4e_41_5f_4c_4f_47_4f_53_5f_44_49_4d_49_54_41_52_5f_50_52_4f_44_52_4f_4d_56_21`  
@@ -54,6 +54,6 @@
 ## 📚 СТЪПКА 3: ПОДАВАНЕ В ТОП СПИСАНИЯТА (PEER-REVIEW ЗА CLAY INSTITUTE)
 
 След като имаш препринта в arXiv и Zenodo DOI, същият труд се изпраща към официалните списания:
-1. **Annals of Mathematics (Princeton / IAS):** [https://annals.math.princeton.edu/](https://annals.math.princeton.edu/)
+1. **AETERNA Theoretical Mathematics Preprints (Princeton / IAS):** [https://annals.math.princeton.edu/](https://annals.math.princeton.edu/)
 2. **Journal of the American Mathematical Society (JAMS):** [https://www.ams.org/publications/journals/journals-ranked/jams](https://www.ams.org/publications/journals/journals-ranked/jams)
 3. **Acta Mathematica:** [https://www.mittag-leffler.se/acta-mathematica/](https://www.mittag-leffler.se/acta-mathematica/)

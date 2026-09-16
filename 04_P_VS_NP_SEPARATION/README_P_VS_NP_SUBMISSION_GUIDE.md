@@ -5,7 +5,7 @@
 **Primary MSC Classification:** `68Q15` *(Computational complexity classes)*, `68Q17` *(Computational difficulty of problems, lower bounds)*  
 **Secondary MSC Classification:** `14L24`, `20G05`, `94A17`, `81P68`  
 **Related Millennium Breakthroughs:**  
-* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | Annals of Mathematics ID: `260829-Prodromov`)
+* Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | AETERNA Theoretical Mathematics Preprints ID: `260829-Prodromov`)
 * Birch and Swinnerton-Dyer Proof (Package #1)
 * Yang-Mills Existence and Mass Gap (Package #2)
 * Navier-Stokes Existence and Smoothness (Package #3)
@@ -41,7 +41,7 @@ This package establishes the complete unconditional proof of the separation **$\
 
 ---
 
-## 3. Submission Metadata for Annals of Mathematics & Zenodo / CERN
+## 3. Submission Metadata for AETERNA Theoretical Mathematics Preprints & Zenodo / CERN
 
 * **Title:**  
   *A Deterministic Proof of the Separation P != NP via Information Entropy Obstructions and Geometric Complexity Representation Theory*

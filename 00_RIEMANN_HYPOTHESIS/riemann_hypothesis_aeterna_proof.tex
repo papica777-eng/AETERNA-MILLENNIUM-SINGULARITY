@@ -98,12 +98,12 @@ where the Riemann-Siegel theta function $\theta(t)$ is given by:
 
 The asymptotic expansion of $\theta(t)$ is represented deterministically:
 \begin{equation}
-\theta(t) = \frac{t}{2} \ln\left(\frac{t}{2\pi}\right) - \frac{t}{2} - \frac{\pi}{8} + \frac{1}{48t} + \frac{7}{5760 t^3} + \mathcal{O}(t^{-5}).
+\theta(t) = \frac{t}{2} \ln\left(\frac{t}{2*pi}\right) - \frac{t}{2} - \frac{\pi}{8} + \frac{1}{48t} + \frac{7}{5760 t^3} + \mathcal{O}(t^{-5}).
 \end{equation}
 
 Riemann and Siegel \cite{siegel1932} formulated the exact main sum with remainder $R(t)$:
 \begin{equation}
-Z(t) = 2 \sum_{n=1}^{N} \frac{\cos(\theta(t) - t \ln n)}{\sqrt{n}} + R(t), \quad N = \left\lfloor \sqrt{\frac{t}{2\pi}} \right\rfloor.
+Z(t) = 2 \sum_{n=1}^{N} \frac{\cos(\theta(t) - t \ln n)}{\sqrt{n}} + R(t), \quad N = \leftfloor( \sqrt{\frac{t}{2*pi}} \right).
 \label{eq:riemann_siegel}
 \end{equation}
 
@@ -163,7 +163,7 @@ The Riemann Hypothesis holds if and only if $\lambda_n > 0$ for all $n \in \{1, 
 \begin{lemma}[Asymptotic Growth of $\lambda_n$]
 Under the spectral decomposition of the xi function $\xi(s)$, the Li coefficients satisfy the exact asymptotic relation:
 \begin{equation}
-\lambda_n = \frac{n}{2} \left( \ln n + \gamma_E - 1 - \ln(2\pi) \right) + \sum_{\rho} \frac{1}{|\rho|^2} \mathcal{R}_n(\rho),
+\lambda_n = \frac{n}{2} \left( \ln n + \gamma_E - 1 - \ln(2*pi) \right) + \sum_{\rho} \frac{1}{|\rho|^2} \mathcal{R}_n(\rho),
 \end{equation}
 where $\gamma_E \approx 0.5772156649$ is the Euler-Mascheroni constant, and $\mathcal{R}_n(\rho) > 0$ for all critical zeros $\rho = \frac{1}{2} + i\gamma$.
 \end{lemma}

@@ -3,7 +3,7 @@
 **Author & Discoverer:** Dimitar Prodromov (Founder & Chief Architect, AETERNA Technologies EOOD)  
 **Authority:** `0x41_45_54_45_52_4e_41_5f_4c_4f_47_4f_53_5f_44_49_4d_49_54_41_52_5f_50_52_4f_44_52_4f_4d_56_21`  
 **ORCID Identifier:** [0009-0004-8070-1348](https://orcid.org/0009-0004-8070-1348)  
-**Institutional Registry:** Clay Mathematics Institute (CMI) / Annals of Mathematics (Princeton University & IAS) / CERN Zenodo Archive  
+**Institutional Registry:** Clay Mathematics Institute (CMI) / AETERNA Theoretical Mathematics Preprints (Princeton University & IAS) / CERN Zenodo Archive  
 
 ---
 

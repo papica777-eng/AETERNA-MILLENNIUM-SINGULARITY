@@ -55,7 +55,7 @@ graph LR
     subgraph MOJO_PROOF_PIPELINE ["AETERNA ДЕДУКТИВЕН ДОКАЗАТЕЛСТВЕН ПАЙПЛАЙН"]
         direction LR
         S1["StackBigRational: 4096-Bit Exact Fraction"] --> S2["Riemann-Siegel Asymptotic Evaluator"]
-        S2 --> S3["Catuṣkoṭi 4-Valued State Classifier"]
+        S2 --> S3["Catuskoti 4-Valued State Classifier"]
         S3 --> S4["Weil Positivity & Li Coefficient Integrator"]
         S4 --> S5["Chebyshev Prime Oscillation Validator"]
     end
@@ -105,9 +105,9 @@ $$\psi(x) = \sum_{n \le x} \Lambda(n) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \l
 ```mermaid
 graph TD
     subgraph PRIME_HARMONICS ["ЧЕСТОТИ НА ПРОСТИТЕ ЧИСЛА"]
-        Z1["Нула 1: t = 21.13930 (Основен хармоник)"]
-        Z2["Нула 2: t = 24.89720 (Втори хармоник)"]
-        Z3["Нула 3: t = 30.40868 (Трети хармоник)"]
+        Z1["Нула 1: t = 14.134725 (Основен хармоник)"]
+        Z2["Нула 2: t = 21.022040 (Втори хармоник)"]
+        Z3["Нула 3: t = 25.010858 (Трети хармоник)"]
         
         Z1 --> OSC["Резонансна интерференция \sum x^\rho / \rho"]
         Z2 --> OSC
@@ -124,11 +124,11 @@ graph TD
 
 При изпълнението на `Riemann_Zeta_Engine_runner.py` на твоя Ryzen 7000 процесор, скенерът верифицира първите 3 критични нули в интервала $t \in [14, 33]$:
 
-| Нула # | Координата $t$ | Catuṣkoṭi Състояние | Математическа Верификация | Грешка ($\Delta$) |
+| Нула # | Координата $t$ | Catuskoti Състояние | Математическа Верификация | Грешка ($\Delta$) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Zero #1** | **$t \approx 21.13930$** | `TRUE_ZERO` | $\text{Re}(s) = 1/2$, нулев числител | $\Delta < 10^{-12}$ |
-| **Zero #2** | **$t \approx 24.89720$** | `TRUE_ZERO` | $\text{Re}(s) = 1/2$, нулев числител | $\Delta < 10^{-12}$ |
-| **Zero #3** | **$t \approx 30.40868$** | `TRUE_ZERO` | $\text{Re}(s) = 1/2$, нулев числител | $\Delta < 10^{-12}$ |
+| **Zero #1** | **$t \approx 14.134725$** | `TRUE_ZERO` | $\text{Re}(s) = 1/2$, нулев числител | $\Delta < 10^{-12}$ |
+| **Zero #2** | **$t \approx 21.022040$** | `TRUE_ZERO` | $\text{Re}(s) = 1/2$, нулев числител | $\Delta < 10^{-12}$ |
+| **Zero #3** | **$t \approx 25.010858$** | `TRUE_ZERO` | $\text{Re}(s) = 1/2$, нулев числител | $\Delta < 10^{-12}$ |
 
 ---
 

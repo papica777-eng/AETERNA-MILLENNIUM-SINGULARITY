@@ -4,7 +4,7 @@
 **ORCID:** [0009-0004-8070-1348](https://orcid.org/0009-0004-8070-1348)  
 **Primary MSC Classification:** `11G05` *(Elliptic curves over global fields)*, `11G40` *($L$-functions of varieties over global fields; Birch-Swinnerton-Dyer conjecture)*  
 **Secondary MSC Classification:** `14H52`, `11F11`, `47A10`, `81Q10`  
-**Related Millennium Breakthrough:** Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | Annals of Mathematics ID: `260829-Prodromov`)  
+**Related Millennium Breakthrough:** Riemann Hypothesis Proof (CERN / Zenodo DOI: `10.5281/zenodo.22148893` | AETERNA Theoretical Mathematics Preprints ID: `260829-Prodromov`)  
 
 ---
 
@@ -38,7 +38,7 @@ This package establishes the complete, unconditional proof of the **Birch and Sw
 
 ---
 
-## 3. Submission Metadata for Annals of Mathematics & Zenodo / CERN
+## 3. Submission Metadata for AETERNA Theoretical Mathematics Preprints & Zenodo / CERN
 
 * **Title:**  
   *A Deterministic Spectral Proof of the Birch and Swinnerton-Dyer Conjecture via Modular L-Function Weil Positivity and Self-Adjoint Trace Induction*
