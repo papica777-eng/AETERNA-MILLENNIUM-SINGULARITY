@@ -202,8 +202,11 @@ For any smooth complex projective variety $X \subset \mathbb{P}^N(\mathbb{C})$, 
 
 ---
 
-## 🛡️ License
+## 🛡️ License & Intellectual Property Restriction
 
-All source codes, LaTeX files, vector graphics, and compiled papers are released under the **AETERNA Sovereign Open Science License** / **Creative Commons Attribution 4.0 International (CC-BY 4.0)**.
+All mathematical proofs, manuscripts, algorithms, rational arithmetic kernels, and vector artifacts are protected under the **AETERNA Sovereign Intellectual Property & Proprietary Monopoly License** (see [`LICENSE`](./LICENSE)).
 
-*Copyright © 2026 Dimitar Prodromov. AETERNA Technologies EOOD. All rights reserved.*
+* **Academic & Peer-Review Verification Only:** Permission is granted exclusively for non-commercial academic peer review and formal mathematical validation.
+* **Strict Commercial, Industrial, and Military Prohibition:** Any commercial exploitation, industrial deployment, patent claiming, hardware/software integration, or training of AI/LLM models without an executed bilateral commercial license deed with the author is strictly prohibited.
+
+*Copyright © 2026 Dimitar Prodromov. All Rights Reserved. AETERNA Technologies EOOD.*
