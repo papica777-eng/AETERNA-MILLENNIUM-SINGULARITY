@@ -1,0 +1,26 @@
+# Prohibit raw scripts, engines, and calculations from public repo
+*.py
+*.mojo
+*.cu
+*.rs
+*.cpp
+*.c
+*.sh
+*.bat
+*.ps1
+*.ipynb
+
+# Secrets, keys, logs, environments
+*.env
+*.env.*
+*.key
+*.pem
+*.log
+*.pfx
+
+# Build artifacts and caches
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
