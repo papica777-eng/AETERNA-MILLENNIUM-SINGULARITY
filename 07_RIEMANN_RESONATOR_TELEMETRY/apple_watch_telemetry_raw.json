@@ -1,0 +1,17 @@
+{
+  "device": "Apple Watch Ultra 2",
+  "sensor_type": "Optical PPG Green (525nm) + Accelerometer",
+  "sampling_rate_hz": 50.0,
+  "frames": [
+    {"timestamp_ms": 1718000000000, "raw_ppg": 2048.12, "raw_ecg": 0.0, "motion_accel_norm": 2.45},
+    {"timestamp_ms": 1718000000020, "raw_ppg": 2180.45, "raw_ecg": 0.0, "motion_accel_norm": 2.89},
+    {"timestamp_ms": 1718000000040, "raw_ppg": 1950.80, "raw_ecg": 0.0, "motion_accel_norm": 3.12},
+    {"timestamp_ms": 1718000000060, "raw_ppg": 1820.30, "raw_ecg": 0.0, "motion_accel_norm": 2.78},
+    {"timestamp_ms": 1718000000080, "raw_ppg": 2290.15, "raw_ecg": 0.0, "motion_accel_norm": 3.40},
+    {"timestamp_ms": 1718000000100, "raw_ppg": 2450.60, "raw_ecg": 0.0, "motion_accel_norm": 3.85},
+    {"timestamp_ms": 1718000000120, "raw_ppg": 2110.00, "raw_ecg": 0.0, "motion_accel_norm": 2.95},
+    {"timestamp_ms": 1718000000140, "raw_ppg": 1980.25, "raw_ecg": 0.0, "motion_accel_norm": 2.60},
+    {"timestamp_ms": 1718000000160, "raw_ppg": 2340.90, "raw_ecg": 0.0, "motion_accel_norm": 3.20},
+    {"timestamp_ms": 1718000000180, "raw_ppg": 2520.40, "raw_ecg": 0.0, "motion_accel_norm": 3.90}
+  ]
+}

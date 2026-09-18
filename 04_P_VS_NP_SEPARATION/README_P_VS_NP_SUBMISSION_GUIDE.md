@@ -41,15 +41,19 @@ This package establishes the complete unconditional proof of the separation **$\
 
 ---
 
-## 3. Submission Metadata for AETERNA Theoretical Mathematics Preprints & Zenodo / CERN
+## 3. Submission Metadata & Official Registry
 
-* **Title:**  
-  *A Deterministic Proof of the Separation P != NP via Information Entropy Obstructions and Geometric Complexity Representation Theory*
+* **Title (v2.0.0):**  
+  *A Geometric and Information-Theoretic Framework for the P != NP Separation via Generalized Multiplicity Obstructions and Solution Tree Entropy Bounds*
+* **Journal Submission:** *Advances in Pure Mathematics (APM)*
+* **Official Manuscript ID:** `5302864`
+* **Submission Date:** September 18, 2026
+* **Status:** 🟢 **Submitted & Under Review (No Actions Required)**
 * **Author:** Dimitar Prodromov
 * **Institution:** AETERNA Technologies EOOD
 * **Primary MSC Code:** `68Q15`
 * **Secondary MSC Codes:** `68Q17, 14L24, 20G05, 94A17, 81P68`
-* **Keywords:** P vs NP Problem, Computational Complexity, Circuit Lower Bounds, Geometric Complexity Theory, Kronecker Multiplicities, Permanent vs Determinant, Information Entropy, Natural Proofs Barrier Bypass
+* **Keywords:** P vs NP Problem, Computational Complexity, Circuit Lower Bounds, Geometric Complexity Theory, Kronecker Multiplicities, Permanent vs Determinant, Solution Tree Entropy, Natural Proofs Barrier Bypass
 
 ---
 

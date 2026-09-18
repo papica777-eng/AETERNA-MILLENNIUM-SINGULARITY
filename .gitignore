@@ -22,5 +22,12 @@
 __pycache__/
 *.pyc
 *.pyo
+*.dll
+*.exe
+*.pdb
+*.exp
+*.lib
+*.o
+*.obj
 .DS_Store
 Thumbs.db
