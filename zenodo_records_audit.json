@@ -1,0 +1,200 @@
+[
+  {
+    "id": "22148893",
+    "title": "A Deterministic Spectral Proof of the Riemann Hypothesis via Weil Positivity, Li Criterion Asymptotics, and Catuskoti Algebraic Induction",
+    "doi": "10.5281/zenodo.22148893",
+    "date": "2026-08-28",
+    "files": [
+      "AETERNA_RIEMANN_HYPOTHESIS_FORMAL_PROOF_PAPER.pdf",
+      "riemann_hypothesis_aeterna_proof.tex"
+    ]
+  },
+  {
+    "id": "22160706",
+    "title": "AETERNA SINGULARITY: The Grand Unified Resolution of the 6 Millennium Prize Problems via Self-Adjoint Spectral Operators and Geometric Invariants",
+    "doi": "10.5281/zenodo.22160706",
+    "date": "2026-08-29",
+    "files": [
+      "AETERNA_YANG_MILLS_MASS_GAP_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_HODGE_CONJECTURE_FORMAL_PROOF_PAPER.pdf",
+      "p_vs_np_aeterna_submission_package.zip",
+      "AETERNA_BSD_CONJECTURE_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_NAVIER_STOKES_SMOOTHNESS_FORMAL_PROOF_PAPER.pdf",
+      "bsd_conjecture_aeterna_submission_package.zip",
+      "navier_stokes_aeterna_submission_package.zip",
+      "hodge_aeterna_submission_package.zip",
+      "yang_mills_aeterna_submission_package.zip",
+      "AETERNA_P_VS_NP_SEPARATION_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22674294",
+    "title": "A Deterministic Spectral Proof of the Riemann Hypothesis via Weil Positivity, Li Criterion Asymptotics, and Catuskoti Algebraic Induction",
+    "doi": "10.5281/zenodo.22674294",
+    "date": "2026-09-09",
+    "files": [
+      "AETERNA_RIEMANN_HYPOTHESIS_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22809007",
+    "title": "SPECTRAL-AUTOMORPHIC ARITHMETIC: Operator Reduction of Classical Arithmetic Barriers (The Riemann Hypothesis, The Effective abc Bound, and The Strong Goldbach Law) [Formal PDF & TeX Edition]",
+    "doi": "10.5281/zenodo.22809007",
+    "date": "2026-09-17",
+    "files": [
+      "spectral_automorphic_arithmetic_monograph_trilogy.zip",
+      "SPECTRAL_AUTOMORPHIC_ARITHMETIC_MONOGRAPH_TRILOGY.pdf",
+      "spectral_arithmetic.bib",
+      "theorems.tex"
+    ]
+  },
+  {
+    "id": "22674306",
+    "title": "AETERNA SINGULARITY: The Grand Unified Resolution of the 6 Millennium Prize Problems via Self-Adjoint Spectral Operators and Geometric Invariants",
+    "doi": "10.5281/zenodo.22674306",
+    "date": "2026-09-09",
+    "files": [
+      "LICENSE",
+      "AETERNA_RIEMANN_HYPOTHESIS_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_BSD_CONJECTURE_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_YANG_MILLS_MASS_GAP_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_NAVIER_STOKES_SMOOTHNESS_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_P_VS_NP_SEPARATION_FORMAL_PROOF_PAPER.pdf",
+      "AETERNA_HODGE_CONJECTURE_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22704400",
+    "title": "AETERNA HODGE SINGULARITY: A Complete Constructive Resolution of the Hodge Conjecture via Demailly Closed Positive Currents and Chow-Kodaira Cycles",
+    "doi": "10.5281/zenodo.22704400",
+    "date": "2026-09-11",
+    "files": [
+      "AETERNA_HODGE_CONJECTURE_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22163008",
+    "title": "AETERNA-QSTN: Quantum-Safe Tactical Mesh Networking, Post-Quantum Cryptography, and Submarine Acoustic-Optical Quantum Telemetry",
+    "doi": "10.5281/zenodo.22163008",
+    "date": "2026-08-29",
+    "files": []
+  },
+  {
+    "id": "22663362",
+    "title": "AETERNA-FUSION: Tokamak Plasma Equilibrium, Magnetohydrodynamic (MHD) Stabilization, and Sub-Microsecond Disruption Control Core",
+    "doi": "10.5281/zenodo.22663362",
+    "date": "2026-09-08",
+    "files": [
+      "AETERNA_FUSION_MONOGRAPH_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22746138",
+    "title": "AETERNA EPIGENETIC SINGULARITY: Deterministic Epigenetic Rejuvenation via Saddle-Node Bifurcation Control (-30.42 Years with 0.00% Oncogenic Drift)",
+    "doi": "10.5281/zenodo.22746138",
+    "date": "2026-09-14",
+    "files": [
+      "AETERNA_EPIGENETIC_REJUVENATION_BREAKTHROUGH_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22703183",
+    "title": "AETERNA BSD SINGULARITY: A Deterministic Spectral Proof of the Birch and Swinnerton-Dyer Conjecture via Modular L-Function Weil Positivity and Self-Adjoint Trace Induction",
+    "doi": "10.5281/zenodo.22703183",
+    "date": "2026-09-11",
+    "files": [
+      "AETERNA_BSD_CONJECTURE_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22163013",
+    "title": "AETERNA-QKD: High-Rate Entanglement-Based Quantum Key Distribution Backbone for EuroHPC Supercomputing Centers",
+    "doi": "10.5281/zenodo.22163013",
+    "date": "2026-08-29",
+    "files": []
+  },
+  {
+    "id": "22703199",
+    "title": "AETERNA EPIGENETIC SINGULARITY: Deterministic Epigenetic Rejuvenation via Saddle-Node Bifurcation Control (-30.42 Years with 0.00% Oncogenic Drift)",
+    "doi": "10.5281/zenodo.22703199",
+    "date": "2026-09-11",
+    "files": [
+      "AETERNA_EPIGENETIC_REJUVENATION_BREAKTHROUGH_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22734388",
+    "title": "AETERNA SELYE ENGINE: A Deterministic Physiological Digital Twin of the Neuroendocrine HPA-Axis, Mitochondrial Allostatic Load, and Epigenetic Aging Dynamics",
+    "doi": "10.5281/zenodo.22734388",
+    "date": "2026-09-13",
+    "files": [
+      "AETERNA_SELYE_ENGINE_SCIENTIFIC_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22663366",
+    "title": "AETERNA EXODUS PROTOCOL: Intergalactic Horizon, Relativistic MHD Space Propulsion, and In-Flight Biological Longevity Architecture",
+    "doi": "10.5281/zenodo.22663366",
+    "date": "2026-09-08",
+    "files": [
+      "AETERNA_EXODUS_SPACE_PROPULSION_MONOGRAPH.pdf"
+    ]
+  },
+  {
+    "id": "22163006",
+    "title": "OMNI-VIVISECTOR: Deterministic Spectral Formal Verification, Krein-Hilbert Operator Analysis, and Autonomous Zero-Day Invariant Synthesis for Distributed Systems",
+    "doi": "10.5281/zenodo.22163006",
+    "date": "2026-08-29",
+    "files": []
+  },
+  {
+    "id": "22663370",
+    "title": "SOUL DSL: Deterministic Compiler Grammar, Catuṣkoṭi Logical Engine, and Metamorphic Virtual Machine for Sovereign AI Systems",
+    "doi": "10.5281/zenodo.22663370",
+    "date": "2026-09-08",
+    "files": [
+      "AETERNA_SOUL_DSL_SPECIFICATION_MONOGRAPH.pdf"
+    ]
+  },
+  {
+    "id": "22703189",
+    "title": "AETERNA NAVIER-STOKES SINGULARITY: Global Regularity and Non-Blowup Proof of the 3D Incompressible Navier-Stokes Equations via BKM Enstrophy and Geometric Coherence",
+    "doi": "10.5281/zenodo.22703189",
+    "date": "2026-09-11",
+    "files": [
+      "AETERNA_NAVIER_STOKES_SMOOTHNESS_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22703187",
+    "title": "AETERNA YANG-MILLS SINGULARITY: A Constructive Proof of Quantum Yang-Mills Existence and Strict Mass Gap on R^4 via Non-Perturbative Gribov-Lichnerowicz Spectral Geometry",
+    "doi": "10.5281/zenodo.22703187",
+    "date": "2026-09-11",
+    "files": [
+      "AETERNA_YANG_MILLS_MASS_GAP_FORMAL_PROOF_PAPER.pdf"
+    ]
+  },
+  {
+    "id": "22163003",
+    "title": "AETERNA-VHT: Multi-Scale Virtual Human Twin for Deterministic In-Silico Oncology, Precision Drug Discovery, and Navier-Stokes Perfusion Dynamics",
+    "doi": "10.5281/zenodo.22163003",
+    "date": "2026-08-29",
+    "files": []
+  },
+  {
+    "id": "22163010",
+    "title": "AETERNA-SCW: Real-Time Acoustic & Seismic Interferometry, Quantum-Enhanced DAS Sensing, and Smart Subsea Fiber Cable Telemetry",
+    "doi": "10.5281/zenodo.22163010",
+    "date": "2026-08-29",
+    "files": []
+  },
+  {
+    "id": "22704273",
+    "title": "A Geometric and Information-Theoretic Framework for the P != NP Separation via Generalized Multiplicity Obstructions and Solution Tree Entropy Bounds",
+    "doi": "10.5281/zenodo.22704273",
+    "date": "2026-09-11",
+    "files": [
+      "AETERNA_P_VS_NP_SEPARATION_FORMAL_PROOF_PAPER.pdf"
+    ]
+  }
+]

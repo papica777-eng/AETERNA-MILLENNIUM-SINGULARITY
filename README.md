@@ -3,9 +3,9 @@
 **Author & Discoverer:** Dimitar Prodromov  
 **Institution:** AETERNA Technologies EOOD, Bulgaria  
 **ORCID:** [0009-0004-8070-1348](https://orcid.org/0009-0004-8070-1348) • **Email:** `dimitar@aeterna.website`  
-**Official Digital Archive:** CERN / Zenodo DOI: [`10.5281/zenodo.22148893`](https://doi.org/10.5281/zenodo.22148893) & [`10.5281/zenodo.22160706`](https://doi.org/10.5281/zenodo.22160706)  
+**Official Digital Archive:** CERN / Zenodo DOI: [`10.5281/zenodo.22148893`](https://doi.org/10.5281/zenodo.22148893), [`10.5281/zenodo.22160706`](https://doi.org/10.5281/zenodo.22160706), [`10.5281/zenodo.22834609`](https://doi.org/10.5281/zenodo.22834609) & [`10.5281/zenodo.22834610`](https://doi.org/10.5281/zenodo.22834610)  
 **Princeton Annals Submissions:** `260829-Prodromov` to `260829-Prodromov-6` *(Status: Under Review in AETERNA Theoretical Mathematics Preprints)*  
-**Repository Web Portal:** [https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/](https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/)  
+**Repository Web Portal:** [https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/](https://papica777-eng.github.io/AETERNA-MILLENNIUM-SINGULARITY/) • **Official Architecture Whitepaper:** [`TECHNICAL_WHITEPAPER.md`](./TECHNICAL_WHITEPAPER.md)  
 
 <p align="center">
   <img src="assets/aeterna_master_banner.jpg" alt="AETERNA — The Soul of the Universe" width="100%" />

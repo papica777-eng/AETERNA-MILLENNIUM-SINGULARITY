@@ -1,0 +1,911 @@
+[
+  {
+    "time_hours": 0.0,
+    "oct4": 0.0639,
+    "nanog": 0.04,
+    "methylation_m": 0.9995,
+    "dnam_age_years": 74.96,
+    "central_concentration": 0.3,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 4.0,
+    "oct4": 0.4639,
+    "nanog": 0.0602,
+    "methylation_m": 0.9387,
+    "dnam_age_years": 70.4,
+    "central_concentration": 1.8085,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 8.0,
+    "oct4": 0.5088,
+    "nanog": 0.0759,
+    "methylation_m": 0.8579,
+    "dnam_age_years": 64.34,
+    "central_concentration": 2.5916,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 12.0,
+    "oct4": 0.5211,
+    "nanog": 0.0806,
+    "methylation_m": 0.781,
+    "dnam_age_years": 58.58,
+    "central_concentration": 3.1373,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 16.0,
+    "oct4": 0.5254,
+    "nanog": 0.0823,
+    "methylation_m": 0.7104,
+    "dnam_age_years": 53.28,
+    "central_concentration": 3.2838,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 20.0,
+    "oct4": 0.5251,
+    "nanog": 0.0826,
+    "methylation_m": 0.6463,
+    "dnam_age_years": 48.47,
+    "central_concentration": 2.1639,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 24.0,
+    "oct4": 0.5205,
+    "nanog": 0.0815,
+    "methylation_m": 0.5885,
+    "dnam_age_years": 44.13,
+    "central_concentration": 1.7262,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 28.0,
+    "oct4": 0.5132,
+    "nanog": 0.0795,
+    "methylation_m": 0.5367,
+    "dnam_age_years": 40.25,
+    "central_concentration": 1.4894,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 32.0,
+    "oct4": 0.5036,
+    "nanog": 0.077,
+    "methylation_m": 0.4905,
+    "dnam_age_years": 36.79,
+    "central_concentration": 1.3199,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 36.0,
+    "oct4": 0.4915,
+    "nanog": 0.074,
+    "methylation_m": 0.4495,
+    "dnam_age_years": 33.71,
+    "central_concentration": 1.1796,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 40.0,
+    "oct4": 0.4757,
+    "nanog": 0.0703,
+    "methylation_m": 0.4132,
+    "dnam_age_years": 30.99,
+    "central_concentration": 1.057,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 44.0,
+    "oct4": 0.4554,
+    "nanog": 0.0659,
+    "methylation_m": 0.3815,
+    "dnam_age_years": 28.61,
+    "central_concentration": 0.9479,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 48.0,
+    "oct4": 0.4447,
+    "nanog": 0.0611,
+    "methylation_m": 0.3539,
+    "dnam_age_years": 26.54,
+    "central_concentration": 1.1503,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 52.0,
+    "oct4": 0.5039,
+    "nanog": 0.074,
+    "methylation_m": 0.326,
+    "dnam_age_years": 24.45,
+    "central_concentration": 2.5713,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 56.0,
+    "oct4": 0.5198,
+    "nanog": 0.0801,
+    "methylation_m": 0.2988,
+    "dnam_age_years": 22.41,
+    "central_concentration": 3.2759,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 60.0,
+    "oct4": 0.5251,
+    "nanog": 0.0822,
+    "methylation_m": 0.2737,
+    "dnam_age_years": 20.53,
+    "central_concentration": 3.7512,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 64.0,
+    "oct4": 0.5271,
+    "nanog": 0.083,
+    "methylation_m": 0.2508,
+    "dnam_age_years": 18.81,
+    "central_concentration": 3.8345,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 68.0,
+    "oct4": 0.527,
+    "nanog": 0.0831,
+    "methylation_m": 0.2301,
+    "dnam_age_years": 17.26,
+    "central_concentration": 2.658,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 72.0,
+    "oct4": 0.5251,
+    "nanog": 0.0826,
+    "methylation_m": 0.2114,
+    "dnam_age_years": 15.85,
+    "central_concentration": 2.1694,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 76.0,
+    "oct4": 0.5221,
+    "nanog": 0.0818,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.887,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 80.0,
+    "oct4": 0.518,
+    "nanog": 0.0807,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.6766,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 84.0,
+    "oct4": 0.5123,
+    "nanog": 0.0792,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4996,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 88.0,
+    "oct4": 0.5045,
+    "nanog": 0.0772,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.3441,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 92.0,
+    "oct4": 0.4937,
+    "nanog": 0.0745,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.2054,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 96.0,
+    "oct4": 0.4849,
+    "nanog": 0.071,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.3813,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 100.0,
+    "oct4": 0.5129,
+    "nanog": 0.0775,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.7785,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 104.0,
+    "oct4": 0.5227,
+    "nanog": 0.0812,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.4618,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 108.0,
+    "oct4": 0.5262,
+    "nanog": 0.0826,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.918,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 112.0,
+    "oct4": 0.5275,
+    "nanog": 0.0831,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.9841,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 116.0,
+    "oct4": 0.5274,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.7922,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 120.0,
+    "oct4": 0.5258,
+    "nanog": 0.0828,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.2898,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 124.0,
+    "oct4": 0.5234,
+    "nanog": 0.0821,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.9951,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 128.0,
+    "oct4": 0.52,
+    "nanog": 0.0812,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.7735,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 132.0,
+    "oct4": 0.5153,
+    "nanog": 0.08,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.5865,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 136.0,
+    "oct4": 0.5088,
+    "nanog": 0.0783,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4221,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 140.0,
+    "oct4": 0.4997,
+    "nanog": 0.0759,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.2754,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 144.0,
+    "oct4": 0.4918,
+    "nanog": 0.0729,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4441,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 148.0,
+    "oct4": 0.5148,
+    "nanog": 0.0783,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8348,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 152.0,
+    "oct4": 0.5233,
+    "nanog": 0.0815,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.5123,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 156.0,
+    "oct4": 0.5264,
+    "nanog": 0.0827,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.9633,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 160.0,
+    "oct4": 0.5276,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 4.0248,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 164.0,
+    "oct4": 0.5274,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8287,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 168.0,
+    "oct4": 0.526,
+    "nanog": 0.0829,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.3225,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 172.0,
+    "oct4": 0.5236,
+    "nanog": 0.0822,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.0244,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 176.0,
+    "oct4": 0.5204,
+    "nanog": 0.0813,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.7998,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 180.0,
+    "oct4": 0.516,
+    "nanog": 0.0801,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.6102,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 184.0,
+    "oct4": 0.5098,
+    "nanog": 0.0785,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4433,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 188.0,
+    "oct4": 0.5011,
+    "nanog": 0.0763,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.2944,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 192.0,
+    "oct4": 0.4934,
+    "nanog": 0.0734,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4611,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 196.0,
+    "oct4": 0.5153,
+    "nanog": 0.0784,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8501,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 200.0,
+    "oct4": 0.5235,
+    "nanog": 0.0815,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.526,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 204.0,
+    "oct4": 0.5265,
+    "nanog": 0.0827,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.9756,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 208.0,
+    "oct4": 0.5277,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 4.0358,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 212.0,
+    "oct4": 0.5275,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8386,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 216.0,
+    "oct4": 0.526,
+    "nanog": 0.0829,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.3314,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 220.0,
+    "oct4": 0.5237,
+    "nanog": 0.0822,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.0324,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 224.0,
+    "oct4": 0.5206,
+    "nanog": 0.0814,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.807,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 228.0,
+    "oct4": 0.5162,
+    "nanog": 0.0802,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.6166,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 232.0,
+    "oct4": 0.5101,
+    "nanog": 0.0786,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.449,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 236.0,
+    "oct4": 0.5015,
+    "nanog": 0.0764,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.2996,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 240.0,
+    "oct4": 0.4939,
+    "nanog": 0.0735,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4658,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 244.0,
+    "oct4": 0.5155,
+    "nanog": 0.0785,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8543,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 248.0,
+    "oct4": 0.5235,
+    "nanog": 0.0816,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.5298,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 252.0,
+    "oct4": 0.5265,
+    "nanog": 0.0827,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.979,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 256.0,
+    "oct4": 0.5277,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 4.0388,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 260.0,
+    "oct4": 0.5275,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8413,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 264.0,
+    "oct4": 0.526,
+    "nanog": 0.0829,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.3339,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 268.0,
+    "oct4": 0.5237,
+    "nanog": 0.0822,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.0346,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 272.0,
+    "oct4": 0.5206,
+    "nanog": 0.0814,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.8089,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 276.0,
+    "oct4": 0.5163,
+    "nanog": 0.0802,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.6183,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 280.0,
+    "oct4": 0.5102,
+    "nanog": 0.0786,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4506,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 284.0,
+    "oct4": 0.5016,
+    "nanog": 0.0764,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.301,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 288.0,
+    "oct4": 0.494,
+    "nanog": 0.0735,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.467,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 292.0,
+    "oct4": 0.5155,
+    "nanog": 0.0785,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8554,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 296.0,
+    "oct4": 0.5235,
+    "nanog": 0.0816,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.5308,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 300.0,
+    "oct4": 0.5265,
+    "nanog": 0.0827,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.9799,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 304.0,
+    "oct4": 0.5277,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 4.0396,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 308.0,
+    "oct4": 0.5275,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.842,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 312.0,
+    "oct4": 0.526,
+    "nanog": 0.0829,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.3345,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 316.0,
+    "oct4": 0.5237,
+    "nanog": 0.0822,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.0351,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 320.0,
+    "oct4": 0.5206,
+    "nanog": 0.0814,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.8095,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 324.0,
+    "oct4": 0.5163,
+    "nanog": 0.0802,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.6188,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 328.0,
+    "oct4": 0.5102,
+    "nanog": 0.0786,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.451,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 332.0,
+    "oct4": 0.5016,
+    "nanog": 0.0764,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.3014,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 336.0,
+    "oct4": 0.494,
+    "nanog": 0.0735,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4674,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 340.0,
+    "oct4": 0.5155,
+    "nanog": 0.0785,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8557,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 344.0,
+    "oct4": 0.5235,
+    "nanog": 0.0816,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.5311,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 348.0,
+    "oct4": 0.5265,
+    "nanog": 0.0827,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.9801,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 352.0,
+    "oct4": 0.5277,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 4.0398,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 356.0,
+    "oct4": 0.5275,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8422,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 360.0,
+    "oct4": 0.526,
+    "nanog": 0.0829,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.3347,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 364.0,
+    "oct4": 0.5237,
+    "nanog": 0.0822,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.0353,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 368.0,
+    "oct4": 0.5206,
+    "nanog": 0.0814,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.8096,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 372.0,
+    "oct4": 0.5163,
+    "nanog": 0.0802,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.6189,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 376.0,
+    "oct4": 0.5102,
+    "nanog": 0.0786,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4511,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 380.0,
+    "oct4": 0.5016,
+    "nanog": 0.0764,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.3015,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 384.0,
+    "oct4": 0.494,
+    "nanog": 0.0735,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 1.4675,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 388.0,
+    "oct4": 0.5155,
+    "nanog": 0.0785,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 2.8558,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 392.0,
+    "oct4": 0.5235,
+    "nanog": 0.0816,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.5311,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 396.0,
+    "oct4": 0.5265,
+    "nanog": 0.0827,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 3.9802,
+    "oncogenic_risk": 1e-08
+  },
+  {
+    "time_hours": 400.0,
+    "oct4": 0.5277,
+    "nanog": 0.0832,
+    "methylation_m": 0.2,
+    "dnam_age_years": 15.0,
+    "central_concentration": 4.0399,
+    "oncogenic_risk": 1e-08
+  }
+]
